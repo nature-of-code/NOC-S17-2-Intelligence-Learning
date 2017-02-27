@@ -15,7 +15,7 @@ Class Info
 
 Resources
 ---------
-* [Coding Train community list of resources](https://github.com/CodingTrain/Machine-Learning
+* [Coding Train community list of resources](https://github.com/CodingTrain/Machine-Learning)
 
 Related Reading and Watching
 ----------------------------
