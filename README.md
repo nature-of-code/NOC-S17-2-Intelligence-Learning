@@ -54,7 +54,7 @@ Week 5 - Reinforcement Learning
 --------------------------
 * Steering agents
 
-Week 6 - Convulation Networks, Recurrent Networks
+Week 6 - Convolution Networks, Recurrent Networks
 -----------------------------
 * Stuff with images
 * Stuff with text
