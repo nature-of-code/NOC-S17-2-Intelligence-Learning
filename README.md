@@ -12,14 +12,7 @@ Class Info
 * Section 2: Wednesdays, 9:00-11:30am
 * [Office Hours](https://itp.nyu.edu/inwiki/Signup/Shiffman)
 * [Sign up for Mailing List](https://groups.google.com/a/itp.nyu.edu/forum/#!forum/natureofcode)
-
-Resources
----------
-* [Coding Train community list of resources](https://github.com/CodingTrain/Machine-Learning)
-
-Related Reading and Watching
-----------------------------
-* Coming soon
+* [Resources and References](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/References-Resources)
 
 Week 1 - Introduction (March 21/22)
 -------------------------------
