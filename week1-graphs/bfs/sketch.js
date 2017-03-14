@@ -31,22 +31,22 @@ function setup() {
     console.log(person);
     if (!searched[person]) {
       if (isEnd(person)) {
-				var path = [person];
-				var next = parents[person];
-				while (next) {
-					path.push(next);
-					next = parents[next];
-				}
-				console.log(path);
+        var path = [person];
+        var next = parents[person];
+        while (next) {
+          path.push(next);
+          next = parents[next];
+        }
+        console.log(path);
         break;
       } else {
-				var next = graph[person];
-				for (var i = 0; i < next.length; i++) {
-					var neighbor = next[i];
-					queue.push(neighbor);
-					parents[neighbor] = person;
-				}
-				searched[person] = true;
+        var next = graph[person];
+        for (var i = 0; i < next.length; i++) {
+          var neighbor = next[i];
+          queue.push(neighbor);
+          parents[neighbor] = person;
+        }
+        searched[person] = true;
       }
     }
   }
