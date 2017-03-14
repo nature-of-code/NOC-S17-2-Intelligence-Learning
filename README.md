@@ -21,7 +21,7 @@ Related Reading and Watching
 ----------------------------
 * Coming soon
 
-Week 1 - Introduction (Jan 24/25)
+Week 1 - Introduction (March 21/22)
 -------------------------------
 * Class Intro / Overview
 * Algorithms
@@ -32,34 +32,34 @@ Week 1 - Introduction (Jan 24/25)
      * A star
      * Traveling Salesperson
 
-Week 2 - Classification and Prediction
+Week 2 - Genetic Algorithms (March 28/29) 
+---------------------------
+* Search
+* Evolutionary Design
+* Evolutionary Ecosystem
+
+Week 3 - Classification and Prediction (April 4/5)
 -------------------------------
   * KNN
   * Linear Regression
 
-Week 3 - Neural Networks 
+Week 4 - Neural Networks (April 11/12)
 ------------------------
 * Perceptron
 * MultiLayered Feedfoward
 * Backpropogation
 * Tools: Tensorflow
 
-Week 4 - Genetic Algorithms
----------------------------
-* Search
-* Evolutionary Design
-* Evolutionary Ecosystem
-
-Week 5 - Reinforcement Learning
+Week 5 - Reinforcement Learning (April 18/19)
 --------------------------
 * Steering agents
 
-Week 6 - Convolution Networks, Recurrent Networks
+Week 6 - Convolution Networks, Recurrent Networks (April 25/26)
 -----------------------------
 * Stuff with images
 * Stuff with text
 
-Week 7 - Project Presentations
+Week 7 - Project Presentations (May 2/3)
 ------------------------------
 
 Policies
