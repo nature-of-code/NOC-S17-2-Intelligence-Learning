@@ -14,7 +14,7 @@ Class Info
 * [Sign up for Mailing List](https://groups.google.com/a/itp.nyu.edu/forum/#!forum/natureofcode)
 * [Resources and References](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/References-Resources)
 
-Prequesities?
+Prerequisites?
 -------------
 * Basic familiary with [p5.js](http://p5js.org) and [Processing](http://processing.org).
 * Fundamentals of computer programming, equivalent to [ICM](https://github.com/ITPNYU/ICM-2016)
