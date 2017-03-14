@@ -31,10 +31,12 @@ Week 1 - Introduction (March 21/22)
 * Algorithms
   * Big O notation
   * Graphs
-     * Binary Tree
-     * Dijktra's Algorithm
-     * A star
-     * Traveling Salesperson
+     * [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree)
+     * [Breadth-first Search](https://en.wikipedia.org/wiki/Breadth-first_search)
+     * [Dijktra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra's_algorithm)
+     * [A\* search](https://en.wikipedia.org/wiki/A*_search_algorithm)
+     * [Traveling Salesperson](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+     * plus steering agents!
 
 Week 2 - Genetic Algorithms (March 28/29) 
 ---------------------------
