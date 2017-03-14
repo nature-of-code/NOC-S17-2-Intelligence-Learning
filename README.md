@@ -14,6 +14,17 @@ Class Info
 * [Sign up for Mailing List](https://groups.google.com/a/itp.nyu.edu/forum/#!forum/natureofcode)
 * [Resources and References](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/References-Resources)
 
+Prequesities?
+-------------
+* Basic familiary with [p5.js](http://p5js.org) and [Processing](http://processing.org).
+* Fundamentals of computer programming, equivalent to [ICM](https://github.com/ITPNYU/ICM-2016)
+* While taking [Nature of Code Part 1](https://github.com/shiffman/NOC-S17-1-Physics-Animation) is not required, I recommend you familiarize yourself with the following chapters before the first day of class.
+  * [Chapter 1: Vectors](http://natureofcode.com/book/chapter-1-vectors)
+  * [Chapter 2: Forces](http://natureofcode.com/book/chapter-2-forces)
+  * [Chapter 3: Oscillation and Trig](http://natureofcode.com/book/chapter-3-oscillation)
+  * [Chapter 6: Steering Behaviors](http://natureofcode.com/book/chapter-6-autonomous-agents)
+* I assume no knowledge whatsoever about AI, machine learning, deep learning and the accompanying math required for the algorithms listed below. After all, I barely know this stuff myself. 
+
 Week 1 - Introduction (March 21/22)
 -------------------------------
 * Class Intro / Overview
