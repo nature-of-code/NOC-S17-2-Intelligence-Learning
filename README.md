@@ -50,14 +50,14 @@ Week 4 - Neural Networks (April 11/12)
 * Backpropogation
 * Tools: Tensorflow
 
-Week 5 - Reinforcement Learning (April 18/19)
---------------------------
-* Steering agents
-
-Week 6 - Convolution Networks, Recurrent Networks (April 25/26)
+Week 5 - Convolution Networks, Recurrent Networks (April 18/19)
 -----------------------------
 * Stuff with images
 * Stuff with text
+
+Week 6 - Reinforcement Learning (April 25/26)
+--------------------------
+* Steering agents
 
 Week 7 - Project Presentations (May 2/3)
 ------------------------------
