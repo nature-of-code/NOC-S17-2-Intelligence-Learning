@@ -10,6 +10,7 @@ var vehicle;
 function setup() {
   createCanvas(400, 400);
   graph = new Graph();
+  randomSeed(1);
 
   var cols = 10;
   var rows = 10;
@@ -27,10 +28,10 @@ function setup() {
   for (var j = 0; j < rows - 1; j++) {
     for (var i = 0; i < cols; i++) {
       var n = grid[i][j];
-      if (random(1) < 0.8) {
+      if (random(1) < 0.7) {
         n.connect(grid[i][j + 1]);
       }
-      if (random(1) < 0.8 && i < cols - 1) {
+      if (random(1) < 0.7 && i < cols - 1) {
         n.connect(grid[i + 1][j]);
       }
     }
@@ -59,33 +60,33 @@ function draw() {
 
   if (!vehicle.reached(current.x, current.y)) {
     vehicle.arrive(current.x, current.y);
-  } else {
-    if (queue.length > 0) {
-      var node = queue.pop();
-      current = node;
-      if (!node.searched) {
-        if (node == graph.end) {
-          console.log('end!');
-          path.push(node);
-          var next = node.parent;
-          // Make path
-          while (next) {
-            path.push(next);
-            next = next.parent;
-          }
-          noLoop();
-        } else {
-          var next = node.edges;
-          for (var i = 0; i < next.length; i++) {
-            var neighbor = next[i];
-            queue.push(neighbor);
-            neighbor.parent = node;
-          }
-          node.searched = true;
+  } else if (current == graph.end) {
+    noLoop();
+  } else if (queue.length > 0) {
+    var node = queue.pop();
+    current = node;
+    if (!node.searched) {
+      if (node == graph.end) {
+        current = node;
+        path.push(node);
+        var next = node.parent;
+        // Make path
+        while (next) {
+          path.push(next);
+          next = next.parent;
         }
+      } else {
+        var next = node.edges;
+        for (var i = 0; i < next.length; i++) {
+          var neighbor = next[i];
+          queue.push(neighbor);
+          neighbor.parent = node;
+        }
+        node.searched = true;
       }
     }
   }
+
   if (path.length > 0) {
     for (var i = 0; i < path.length; i++) {
       path[i].highlight();
