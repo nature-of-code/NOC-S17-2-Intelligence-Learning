@@ -77,12 +77,21 @@
 
 ## Algorithms
   * Big-O notation
+    - [CS50 video](https://www.youtube.com/watch?v=IM9sHGlYV5A)
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Time_complexity)
   * Binary Search
+    - [Coding Train video](https://www.youtube.com/watch?v=hVSHlFjTeqg&t=2h35m10s) on binary trees
+    - [CS50 video](https://www.youtube.com/watch?v=5xlIPT1FRcA)
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Binary_search_algorithm)
   * Breadth-First Search
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Breadth-first_search)
   * Depth-First Search
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Depth-first_search)
   * Dijkstra's Algorithm
     - [Computerphile video](https://www.youtube.com/watch?v=GazC3A4OQTE)
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
   * A*
     - Coding Train videos: [Part1](https://www.youtube.com/watch?v=aKYlikFAV4k) [Part2](https://www.youtube.com/watch?v=EaZxUCWAjb0) [Part3](https://www.youtube.com/watch?v=jwRT4PCT6RU)
     - [Computerphile video](https://www.youtube.com/watch?v=ySN5Wnu88nE)
   * Traveling Salesperson Problem
+    - Coding Train videos: [Part1](https://www.youtube.com/watch?v=BAejnwN4Ccw) [Part2](https://www.youtube.com/watch?v=goUlyp4rwiU) [Part3](https://www.youtube.com/watch?v=9Xy-LMAfglE)
