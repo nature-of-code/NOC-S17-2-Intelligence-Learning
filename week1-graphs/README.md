@@ -52,6 +52,7 @@
   * [Machine Learning for Musicians and Artists](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info) by Rebecca Fiebrink
   * Not yet released book by [@AndrewGlassner](https://twitter.com/AndrewGlassner)
   * [Grokking Algorithms](http://amzn.to/2n0ZMd8)
+  * [More and more and more references](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/References-Resources)
 
 ## Overview of Syllabus and Topics
 

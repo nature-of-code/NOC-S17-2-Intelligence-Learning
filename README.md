@@ -23,10 +23,11 @@ Prerequisites?
   * [Chapter 2: Forces](http://natureofcode.com/book/chapter-2-forces)
   * [Chapter 3: Oscillation and Trig](http://natureofcode.com/book/chapter-3-oscillation)
   * [Chapter 6: Steering Behaviors](http://natureofcode.com/book/chapter-6-autonomous-agents)
-* I assume no knowledge whatsoever about AI, machine learning, deep learning and the accompanying math required for the algorithms listed below. After all, I barely know this stuff myself. 
+* I assume no knowledge whatsoever about AI, machine learning, deep learning and the accompanying math required for the algorithms listed below. After all, I barely know this stuff myself.
 
 Week 1 - Introduction (March 21/22)
 -------------------------------
+* [Week 1 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week1-graphs/README.md)
 * Class Intro / Overview
 * Algorithms
   * Big O notation
@@ -38,7 +39,7 @@ Week 1 - Introduction (March 21/22)
      * [Traveling Salesperson](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
      * plus steering agents!
 
-Week 2 - Genetic Algorithms (March 28/29) 
+Week 2 - Genetic Algorithms (March 28/29)
 ---------------------------
 * Search
 * Evolutionary Design
