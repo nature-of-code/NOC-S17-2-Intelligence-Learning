@@ -26,6 +26,12 @@ function setup() {
 
 
   background(51);
+
+  for (var i=0; i<10000; i++) {
+    var change = graph.simulate();
+    if (change < 0.1) break; 
+  }
+
   graph.show();
   bfs();
 }

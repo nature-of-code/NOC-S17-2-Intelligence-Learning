@@ -1,6 +1,9 @@
 function Node(label) {
   this.x = random(50,width-50);
   this.y = random(50,height-50);
+  this.velX = 0;
+  this.velY = 0;
+
   this.label = label;
   this.edges = [];
   this.parent = null;
