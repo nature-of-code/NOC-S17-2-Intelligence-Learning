@@ -7,7 +7,7 @@
   * Not a science course.
   * What's left?
   * How can we capture the magic and wonder of "intelligence" and "learning" in software?
-  * What's the difference between software that is intelligent and software that "appears" intelligent?
+  * Is there a difference between software that is intelligent and software that "appears" intelligent?
   * The algorithms and math around this stuff are scary and impenetrable.
   * Can we learn this together?
   * What creative experiments can you make?
@@ -43,6 +43,7 @@
   * DeepMind and Q-Learning
 
 ## Being Critical
+  * [AINOW](https://artificialintelligencenow.com/) led by [Kate Crawford](https://twitter.com/katecrawford) and [Meredith Whittaker](https://twitter.com/mer__edith)
   * "What happened to "making the world a better place"?" [@hardmaru](https://twitter.com/hardmaru/status/843596442694373376)
   * [Automated Inference on Criminality using Face Images](https://arxiv.org/abs/1611.04135)
   * [Facebook Restores Iconic Vietnam War Photo It Censored for Nudity](https://www.nytimes.com/2016/09/10/technology/facebook-vietnam-war-photo-nudity.html)
