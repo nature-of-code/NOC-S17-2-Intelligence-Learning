@@ -24,6 +24,7 @@
   * [Artificial Intelligence: A Modern Approach](http://amzn.to/2nsuIph)
 
 ## What is Machine Learning?
+  * "A field of study that gives computers the ability to learn without being explicitly programmed." [Arthur Samuel](https://en.wikipedia.org/wiki/Arthur_Samuel), 1957 "Samuel Checkers": the world's first self-learning program.
   * Data analysis
   * Data --> Meaning
   * Types of Machine Learning
