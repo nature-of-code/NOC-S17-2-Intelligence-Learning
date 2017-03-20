@@ -1,6 +1,6 @@
 ## Why this course?
   * Background on "The Nature of Code"
-  * Not a AI course.
+  * Not an AI course.
   * Not a Machine Learning course.
   * Not a Deep Learning course.
   * Not an art course.
