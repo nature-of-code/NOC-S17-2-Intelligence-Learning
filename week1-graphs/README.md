@@ -92,6 +92,7 @@
     - [Wikipedia article](https://en.wikipedia.org/wiki/Breadth-first_search)
   * Depth-First Search
     - [Wikipedia article](https://en.wikipedia.org/wiki/Depth-first_search)
+    - Coding Train DFS Maze Generation: [Part1](https://www.youtube.com/watch?v=HyK_Q5rrcr4&index=10&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH), [Part2](https://www.youtube.com/watch?v=D8UgRyRnvXU&index=11&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH), [Part3](https://www.youtube.com/watch?v=8Ju_uxJ9v44&index=12&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH), [Part4](https://www.youtube.com/watch?v=_p5IH0L63wo&index=13&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
   * Dijkstra's Algorithm
     - [Computerphile video](https://www.youtube.com/watch?v=GazC3A4OQTE)
     - [Wikipedia article](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
@@ -100,6 +101,9 @@
     - [Computerphile video](https://www.youtube.com/watch?v=ySN5Wnu88nE)
   * Traveling Salesperson Problem
     - Coding Train videos: [Part1](https://www.youtube.com/watch?v=BAejnwN4Ccw) [Part2](https://www.youtube.com/watch?v=goUlyp4rwiU) [Part3](https://www.youtube.com/watch?v=9Xy-LMAfglE)
+
+## Misc Technical Discussion
+  * What is "Prototype" [Coding Train tutorial](https://www.youtube.com/watch?v=hS_WqkyUah8)
 
 ## Example applications
   * Animal Guessing Game
