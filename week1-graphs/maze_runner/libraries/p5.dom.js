@@ -1,4 +1,4 @@
-/*! p5.dom.js v0.2.13 Oct 1, 2016 */
+/*! p5.dom.js v0.2.6 November 24, 2015 */
 /**
  * <p>The web is much more than just canvas and p5.dom makes it easy to interact
  * with other HTML5 objects, including text, hyperlink, image, input, video,
@@ -54,7 +54,7 @@
    * function setup() {
    *   createCanvas(100,100);
    *   //translates canvas 50px down
-   *   select('canvas').position(100, 100);
+   *   select('canvas').translate(0,50);
    * }
    * </code></div>
    * <div ><code class='norender'>
@@ -109,7 +109,7 @@
    * @param  {String} [container] id, p5.Element, or HTML element to search within
    * @return {Array} Array of p5.Elements containing nodes found
    * @example
-   * <div class='norender'><code>
+   * <div ><code class='norender'>
    * function setup() {
    *   createButton('btn');
    *   createButton('2nd btn');
@@ -121,7 +121,7 @@
    *   }
    * }
    * </code></div>
-   * <div class='norender'><code>
+   * <div ><code class='norender'>
    * // these are all valid calls to selectAll()
    * var a = selectAll('.moo');
    * var b = selectAll('div');
@@ -375,7 +375,6 @@
    * @param  {Number} min minimum value of the slider
    * @param  {Number} max maximum value of the slider
    * @param  {Number} [value] default value of the slider
-   * @param  {Number} [step] step size for each tick of the slider (if step is set to 0, the slider will move continuously from the minimum to the maximum value)
    * @return {Object/p5.Element} pointer to p5.Element holding created node
    * @example
    * <div><code>
@@ -391,32 +390,13 @@
    *   background(val);
    * }
    * </code></div>
-   *
-   * <div><code>
-   * var slider;
-   * function setup() {
-   *   colorMode(HSB);
-   *   slider = createSlider(0, 360, 60, 40);
-   *   slider.position(10, 10);
-   *   slider.style('width', '80px');
-   * }
-   *
-   * function draw() {
-   *   var val = slider.value();
-   *   background(val, 100, 100, 1);
-   * }
-   * </code></div>
    */
   p5.prototype.createSlider = function(min, max, value, step) {
     var elt = document.createElement('input');
     elt.type = 'range';
     elt.min = min;
     elt.max = max;
-    if (step === 0) {
-      elt.step = .000000000000000001; // smallest valid step
-    } else if (step) {
-      elt.step = step;
-    }
+    if (step) elt.step = step;
     if (typeof(value) === "number") elt.value = value;
     return addElement(elt, this);
   };
@@ -476,30 +456,25 @@
    *
    * function myCheckedEvent() {
    *   if (this.checked()) {
-   *     console.log("Checking!");
-   *   } else {
    *     console.log("Unchecking!");
+   *   } else {
+   *     console.log("Checking!");
    *   }
-   * }
+   *
    * </code></div>
    */
   p5.prototype.createCheckbox = function() {
-    var elt = document.createElement('div');
-    var checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    elt.appendChild(checkbox);
+    var elt = document.createElement('input');
+    elt.type = 'checkbox';
     //checkbox must be wrapped in p5.Element before label so that label appears after
     var self = addElement(elt, this);
     self.checked = function(){
-      var cb = self.elt.getElementsByTagName('input')[0];
-      if (cb) {
-        if (arguments.length === 0){
-          return cb.checked;
-        }else if(arguments[0]){
-          cb.checked = true;
-        }else{
-          cb.checked = false;
-        }
+      if (arguments.length === 0){
+        return self.elt.checked;
+      }else if(arguments[0]){
+        self.elt.checked = true;
+      }else{
+        self.elt.checked = false;
       }
       return self;
     };
@@ -510,14 +485,14 @@
     if (arguments[0]){
       var ran = Math.random().toString(36).slice(2);
       var label = document.createElement('label');
-      checkbox.setAttribute('id', ran);
+      elt.setAttribute('id', ran);
       label.htmlFor = ran;
       self.value(arguments[0]);
       label.appendChild(document.createTextNode(arguments[0]));
-      elt.appendChild(label);
+      addElement(label, this);
     }
     if (arguments[1]){
-      checkbox.checked = true;
+      elt.checked = true;
     }
     return self;
   };
@@ -589,62 +564,21 @@
 
   /**
    * Creates a radio button &lt;input&gt;&lt;/input&gt; element in the DOM.
-   * The .option() method can be used to set options for the radio after it is
-   * created. The .value() method will return the currently selected option.
    *
    * @method createRadio
-   * @param  {String} [divId] the id and name of the created div and input field respectively
+   * @param  {String} [divId] the id and name of the created div and input field respectively 
    * @return {Object/p5.Element} pointer to p5.Element holding created node
-   * @example
-   * <div><code>
-   * var radio;
-   *
-   * function setup() {
-   *   radio = createRadio();
-   *   radio.option("black");
-   *   radio.option("white");
-   *   radio.option("gray");
-   *   radio.style('width', '60px');
-   *   textAlign(CENTER);
-   *   fill(255, 0, 0);
-   * }
-   *
-   * function draw() {
-   *   var val = radio.value();
-   *   background(val);
-   *   text(val, width/2, height/2);
-   * }
-   * </code></div>
-   * <div><code>
-   * var radio;
-   *
-   * function setup() {
-   *   radio = createRadio();
-   *   radio.option('apple', 1);
-   *   radio.option('bread', 2);
-   *   radio.option('juice', 3);
-   *   radio.style('width', '60px');
-   *   textAlign(CENTER);
-   * }
-   *
-   * function draw() {
-   *   background(200);
-   *   var val = radio.value();
-   *   if (val) {
-   *     text('item cost is $'+val, width/2, height/2);
-   *   }
-   * }
-   * </code></div>
    */
   p5.prototype.createRadio = function() {
     var radios = document.querySelectorAll("input[type=radio]");
     var count = 0;
     if(radios.length > 1){
+      console.log(radios,radios[0].name);
       var length = radios.length;
       var prev=radios[0].name;
       var current = radios[1].name;
-      count = 1;
-      for(var i = 1; i < length; i++) {
+      count=1;
+      for(var i = 1; i < length; i++ ){
         current = radios[i].name;
         if(prev != current){
           count++;
@@ -681,7 +615,7 @@
     };
     self.selected = function(){
       var length = this.elt.childNodes.length;
-      if(arguments.length == 1) {
+      if(arguments[0]) {
         for (var i = 0; i < length; i+=2){
           if(this.elt.childNodes[i].value == arguments[0])
             this.elt.childNodes[i].checked = true;
@@ -696,7 +630,7 @@
     };
     self.value = function(){
       var length = this.elt.childNodes.length;
-      if(arguments.length == 1) {
+      if(arguments[0]) {
         for (var i = 0; i < length; i+=2){
           if(this.elt.childNodes[i].value == arguments[0])
             this.elt.childNodes[i].checked = true;
@@ -712,7 +646,7 @@
     };
     return self
   };
-
+  
   /**
    * Creates an &lt;input&gt;&lt;/input&gt; element in the DOM for text input.
    * Use .size() to set the display length of the box.
@@ -795,7 +729,7 @@
           }
         }
       }
-
+      
       // Now let's handle when a file was selected
       elt.addEventListener('change', handleFileSelect, false);
       return addElement(elt, this);
@@ -834,9 +768,6 @@
     elt.addEventListener('loadedmetadata', function() {
       c.width = elt.videoWidth;
       c.height = elt.videoHeight;
-      // set elt width and height if not set
-      if (c.elt.width === 0) c.elt.width = elt.videoWidth;
-      if (c.elt.height === 0) c.elt.height = elt.videoHeight;
       c.loadedmetadata = true;
     });
 
@@ -878,7 +809,7 @@
    * paths to different formats of the same audio. This is useful for ensuring
    * that your audio can play across different browsers, as each supports
    * different formats. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">this
-   * page for further information about supported formats</a>.
+   * page for further information about supported formats.
    *
    * @method createAudio
    * @param  {String|Array} src  path to an audio file, or array of paths for
@@ -907,22 +838,18 @@
                             navigator.msGetUserMedia;
 
   /**
-   * <p>Creates a new &lt;video&gt; element that contains the audio/video feed
-   * from a webcam. This can be drawn onto the canvas using video().</p>
-   * <p>More specific properties of the feed can be passing in a Constraints object.
+   * Creates a new &lt;video&gt; element that contains the audio/video feed
+   * from a webcam. This can be drawn onto the canvas using video(). More
+   * specific properties of the stream can be passing in a Constraints object.
    * See the
-   * <a href="http://w3c.github.io/mediacapture-main/getusermedia.html#media-track-constraints"> W3C
+   * <a href="http://w3c.github.io/mediacapture-main/getusermedia.html">W3C
    * spec</a> for possible properties. Note that not all of these are supported
-   * by all browsers.</p>
-   * <p>Security note: A new browser security specification requires that getUserMedia,
-   * which is behind createCapture(), only works when you're running the code locally,
-   * or on HTTPS. Learn more <a href="http://stackoverflow.com/questions/34197653/getusermedia-in-chrome-47-without-using-https">here</a>
-   * and <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">here</a>.</p>
+   * by all browsers.
    *
    * @method createCapture
    * @param  {String|Constant|Object}   type type of capture, either VIDEO or
    *                                    AUDIO if none specified, default both,
-   *                                    or a Constraints object
+   *                                    or a Constraints boject
    * @param  {Function}                 callback function to be called once
    *                                    stream has loaded
    * @return {Object/p5.Element} capture video p5.Element
@@ -987,9 +914,12 @@
 
       navigator.getUserMedia(constraints, function(stream) {
         elt.src = window.URL.createObjectURL(stream);
+        elt.onloadedmetadata = function(e) {
+          elt.play();
           if (cb) {
             cb(stream);
           }
+        };
       }, function(e) { console.log(e); });
     } else {
       throw 'getUserMedia not supported in this browser';
@@ -998,9 +928,8 @@
     c.loadedmetadata = false;
     // set width and height onload metadata
     elt.addEventListener('loadedmetadata', function() {
-      elt.play();
-      c.width = c.elt.width = elt.videoWidth;
-      c.height = c.elt.height = elt.videoHeight;
+      c.width = elt.videoWidth;
+      c.height = elt.videoHeight;
       c.loadedmetadata = true;
     });
     return c;
@@ -1231,51 +1160,91 @@
     }
   };
 
-  /* Helper method called by p5.Element.style() */
-  p5.Element.prototype._translate = function(){
+  /**
+   * Translates an element with css transforms in either 2d (if 2 arguments given)
+   * or 3d (if 3 arguments given) space.
+   * @method  translate
+   * @param  {Number} x x-position in px
+   * @param  {Number} y y-position in px
+   * @param  {Number} [z] z-position in px
+   * @param  {Number} [perspective] sets the perspective of the parent element in px,
+   * default value set to 1000px
+   * @return {Object/p5.Element}
+   * @example
+   * <div ><code class='norender'>
+   * function setup() {
+   *   var cnv = createCanvas(100,100);
+   *   //translates canvas 50px down
+   *   cnv.translate(0,50);
+   * }
+   * </code></div>
+   */
+  p5.Element.prototype.translate = function(){
     this.elt.style.position = 'absolute';
-    // save out initial non-translate transform styling
-    var transform = '';
-    if (this.elt.style.transform) {
-      transform = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
-      transform = transform.replace(/translate[X-Z]?\(.*\)/g, '');
-    }
-    if (arguments.length === 2) {
+    if (arguments.length === 2){
+      var style = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
+      style = style.replace(/translate[X-Z]?\(.*\)/g, '');
       this.elt.style.transform = 'translate('+arguments[0]+'px, '+arguments[1]+'px)';
-    } else if (arguments.length > 2) {
+      this.elt.style.transform += style;
+    }else if (arguments.length === 3){
+      var style = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
+      style = style.replace(/translate[X-Z]?\(.*\)/g, '');
       this.elt.style.transform = 'translate3d('+arguments[0]+'px,'+arguments[1]+'px,'+arguments[2]+'px)';
-      if (arguments.length === 3) {
-        this.elt.parentElement.style.perspective = '1000px';
-      } else {
-        this.elt.parentElement.style.perspective = arguments[3]+'px';
-      }
+      this.elt.style.transform += style;
+      this.elt.parentElement.style.perspective = '1000px';
+    }else if (arguments.length === 4){
+      var style = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
+      style = style.replace(/translate[X-Z]?\(.*\)/g, '');
+      this.elt.style.transform = 'translate3d('+arguments[0]+'px,'+arguments[1]+'px,'+arguments[2]+'px)';
+      this.elt.style.transform += style;
+      this.elt.parentElement.style.perspective = arguments[3]+'px';
     }
-    // add any extra transform styling back on end
-    this.elt.style.transform += transform;
-    return this;
+      return this;
   };
 
-  /* Helper method called by p5.Element.style() */
-  p5.Element.prototype._rotate = function(){
-    // save out initial non-rotate transform styling
-    var transform = '';
-    if (this.elt.style.transform) {
-      var transform = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
-      transform = transform.replace(/rotate[X-Z]?\(.*\)/g, '');
-    }
-
+  /**
+   * Rotates an element with css transforms in either 2d (if 2 arguments given)
+   * or 3d (if 3 arguments given) space.
+   * @method  rotate
+   * @param  {Number} x amount of degrees to rotate the element along the x-axis in deg
+   * @param  {Number} [y] amount of degrees to rotate the element along the y-axis in deg
+   * @param  {Number} [z] amount of degrees to rotate the element along the z-axis in deg
+   * @return {Object/p5.Element}
+   * @example
+   * <div><code>
+   * var x = 0,
+   *     y = 0,
+   *     z = 0;
+   *
+   * function draw(){
+   *   x+=.5 % 360;
+   *   y+=.5 % 360;
+   *   z+=.5 % 360;
+   *   //rotates p5.js logo .5 degrees on every axis each frame.
+   *   select('canvas').rotate(x,y,z);
+   * }
+   * </code></div>
+   */
+  p5.Element.prototype.rotate = function(){
     if (arguments.length === 1){
+      var style = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
+      style = style.replace(/rotate[X-Z]?\(.*\)/g, '');
       this.elt.style.transform = 'rotate('+arguments[0]+'deg)';
+      this.elt.style.transform += style;
     }else if (arguments.length === 2){
+      var style = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
+      style = style.replace(/rotate[X-Z]?\(.*\)/g, '');
       this.elt.style.transform = 'rotate('+arguments[0]+'deg, '+arguments[1]+'deg)';
+      this.elt.style.transform += style;
     }else if (arguments.length === 3){
+      var style = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
+      style = style.replace(/rotate[X-Z]?\(.*\)/g, '');
       this.elt.style.transform = 'rotateX('+arguments[0]+'deg)';
       this.elt.style.transform += 'rotateY('+arguments[1]+'deg)';
       this.elt.style.transform += 'rotateZ('+arguments[2]+'deg)';
+      this.elt.style.transform += style;
     }
-    // add remaining transform back on
-    this.elt.style.transform += transform;
-    return this;
+      return this;
   };
 
   /**
@@ -1300,37 +1269,15 @@
    * var myDiv = createDiv("I like pandas.");
    * myDiv.style("font-size", "18px");
    * myDiv.style("color", "#ff0000");
-   * </code></div>
-   * <div><code class="norender">
    * var col = color(25,23,200,50);
-   * var button = createButton("button");
-   * button.style("background-color", col);
-   * button.position(10, 10);
-   * </code></div>
-   * <div><code class="norender">
-   * var myDiv = createDiv("I like lizards.");
-   * myDiv.style("position", 20, 20);
-   * myDiv.style("rotate", 45);
-   * </code></div>
-   * <div><code class="norender">
-   * var myDiv;
-   * function setup() {
-   *   background(200);
-   *   myDiv = createDiv("I like gray.");
-   *   myDiv.position(20, 20);
-   * }
-   *
-   * function draw() {
-   *   myDiv.style("font-size", mouseX+"px");
-   * }
+   * createButton('button').style("background-color", col);
    * </code></div>
    */
   p5.Element.prototype.style = function(prop, val) {
     var self = this;
 
-    if (val instanceof p5.Color) {
+    if (val instanceof p5.Color)
       val = 'rgba(' + val.levels[0] + ',' + val.levels[1] + ',' + val.levels[2] + ',' + val.levels[3]/255 + ')'
-    }
 
     if (typeof val === 'undefined') {
       if (prop.indexOf(':') === -1) {
@@ -1347,15 +1294,54 @@
         }
       }
     } else {
-      if (prop === 'rotate' || prop === 'translate' || prop === 'position'){
-        var trans = Array.prototype.shift.apply(arguments);
-        var f = this[trans] || this['_'+trans];
-        f.apply(this, arguments);
+      if (prop === 'rotate'){
+        if (arguments.length === 2) {
+          var style = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
+          style = style.replace(/rotate[X-Z]?\(.*\)/g, '');
+          this.elt.style.transform = 'rotate(' + arguments[0] + 'deg)';
+          this.elt.style.transform += style;
+        } else if (arguments.length === 3) {
+          var style = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
+          style = style.replace(/rotate[X-Z]?\(.*\)/g, '');
+          this.elt.style.transform = 'rotate(' + arguments[0] + 'deg, ' + arguments[1] + 'deg)';
+          this.elt.style.transform += style;
+        } else if (arguments.length === 4) {
+          var style = this.elt.style.transform.replace(/rotate3d\(.*\)/g, '');
+          style = style.replace(/rotate[X-Z]?\(.*\)/g, '');
+          this.elt.style.transform = 'rotateX(' + arguments[0] + 'deg)';
+          this.elt.style.transform += 'rotateY(' + arguments[1] + 'deg)';
+          this.elt.style.transform += 'rotateZ(' + arguments[2] + 'deg)';
+          this.elt.style.transform += style;
+        }
+      } else if (prop === 'translate') {
+        if (arguments.length === 3) {
+          var style = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
+          style = style.replace(/translate[X-Z]?\(.*\)/g, '');
+          this.elt.style.transform = 'translate(' + arguments[0] + 'px, ' + arguments[1] + 'px)';
+          this.elt.style.transform += style;
+        } else if (arguments.length === 4) {
+          var style = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
+          style = style.replace(/translate[X-Z]?\(.*\)/g, '');
+          this.elt.style.transform = 'translate3d(' + arguments[0] + 'px,' + arguments[1] + 'px,' + arguments[2] + 'px)';
+          this.elt.style.transform += style;
+          this.elt.parentElement.style.perspective = '1000px';
+        } else if (arguments.length === 5) {
+          var style = this.elt.style.transform.replace(/translate3d\(.*\)/g, '');
+          style = style.replace(/translate[X-Z]?\(.*\)/g, '');
+          this.elt.style.transform = 'translate3d(' + arguments[0] + 'px,' + arguments[1] + 'px,' + arguments[2] + 'px)';
+          this.elt.style.transform += style;
+          this.elt.parentElement.style.perspective = arguments[3] + 'px';
+        }
+      } else if (prop === 'position') {
+        this.elt.style.left = arguments[1] + 'px';
+        this.elt.style.top = arguments[2] + 'px';
+        this.x = arguments[1];
+        this.y = arguments[2];
       } else {
         this.elt.style[prop] = val;
         if (prop === 'width' || prop === 'height' || prop === 'left' || prop === 'top') {
           var numVal = val.replace(/\D+/g, '');
-          this[prop] = parseInt(numVal, 10); // pend: is this necessary?
+          this[prop] = parseInt(numVal, 10);
         }
       }
     }
@@ -1377,7 +1363,7 @@
    * @example
    * <div class="norender"><code>
    * var myDiv = createDiv("I like pandas.");
-   * myDiv.attribute("align", "center");
+   *myDiv.attribute("align", "center");
    * </code></div>
    */
   p5.Element.prototype.attribute = function(attr, value) {
@@ -1391,72 +1377,12 @@
 
 
   /**
-   *
-   * Removes an attribute on the specified element.
-   *
-   * @method removeAttribute
-   * @param  {String} attr       attribute to remove
-   * @return {Object/p5.Element}
-   *
-   * @example
-   * <div><code>
-   * var button;
-   * var checkbox;
-   *
-   * function setup() {
-   *   checkbox = createCheckbox('enable', true);
-   *   checkbox.changed(enableButton);
-   *   button = createButton('button');
-   *   button.position(10, 10);
-   * }
-   *
-   * function enableButton() {
-   *   if( this.checked() ) {
-   *     // Re-enable the button
-   *     button.removeAttribute('disabled');
-   *   } else {
-   *     // Disable the button
-   *     button.attribute('disabled','');
-   *   }
-   * }
-   * </code></div>
-   */
-  p5.Element.prototype.removeAttribute = function(attr) {
-    this.elt.removeAttribute(attr);
-    return this;
-  };
-
-
-  /**
    * Either returns the value of the element if no arguments
    * given, or sets the value of the element.
    *
    * @method value
    * @param  {String|Number}     [value]
    * @return {String|Object/p5.Element} value of element if no value is specified or p5.Element
-   * @example
-   * <div class='norender'><code>
-   * // gets the value
-   * var inp;
-   * function setup() {
-   *   inp = createInput('');
-   * }
-   *
-   * function mousePressed() {
-   *   print(inp.value());
-   * }
-   * </code></div>
-   * <div class='norender'><code>
-   * // sets the value
-   * var inp;
-   * function setup() {
-   *   inp = createInput('myValue');
-   * }
-   *
-   * function mousePressed() {
-   *   inp.value("myValue");
-   * }
-   * </code></div>
    */
   p5.Element.prototype.value = function() {
     if (arguments.length > 0) {
@@ -1476,12 +1402,6 @@
    *
    * @method show
    * @return {Object/p5.Element}
-   * @example
-   * <div class='norender'><code>
-   * var div = createDiv('div');
-   * div.style("display", "none");
-   * div.show(); // turns display to block
-   * </code></div>
    */
   p5.Element.prototype.show = function() {
     this.elt.style.display = 'block';
@@ -1493,11 +1413,6 @@
    *
    * @method hide
    * @return {Object/p5.Element}
-   * @example
-   * <div class='norender'><code>
-   * var div = createDiv('this is a div');
-   * div.hide();
-   * </code></div>
    */
   p5.Element.prototype.hide = function() {
     this.elt.style.display = 'none';
@@ -1514,11 +1429,6 @@
    * @param  {Number} [w] width of the element
    * @param  {Number} [h] height of the element
    * @return {Object/p5.Element}
-   * @example
-   * <div class='norender'><code>
-   * var div = createDiv('this is a div');
-   * div.size(100, 100);
-   * </code></div>
    */
   p5.Element.prototype.size = function(w, h) {
     if (arguments.length === 0){
@@ -1751,25 +1661,6 @@
   };
 
   /**
-   * If no arguments are given, returns the current playback speed of the
-   * element. The speed parameter sets the speed where 2.0 will play the
-   * element twice as fast, 0.5 will play at half the speed, and -1 will play
-   * the element in normal speed in reverse.(Note that not all browsers support
-   * backward playback and even if they do, playback might not be smooth.)
-   *
-   * @method speed
-   * @param {Number} [speed]  speed multiplier for element playback
-   * @return {Number|Object/p5.MediaElement} current playback speed or p5.MediaElement
-   */
-  p5.MediaElement.prototype.speed = function(val) {
-    if (typeof val === 'undefined') {
-      return this.elt.playbackRate;
-    } else {
-      this.elt.playbackRate = val;
-    }
-  };
-
-  /**
    * If no arguments are given, returns the current time of the element.
    * If an argument is given the current time of the element is set to it.
    *
@@ -1797,14 +1688,14 @@
   };
   p5.MediaElement.prototype.pixels = [];
   p5.MediaElement.prototype.loadPixels = function() {
-    if (!this.canvas) {
-      this.canvas = document.createElement('canvas');
-      this.drawingContext = this.canvas.getContext('2d');
-    }
     if (this.loadedmetadata) { // wait for metadata for w/h
+      if (!this.canvas) {
+        this.canvas = document.createElement('canvas');
+        this.drawingContext = this.canvas.getContext('2d');
+      }
       if (this.canvas.width !== this.elt.width) {
-        this.canvas.width = this.elt.width;
-        this.canvas.height = this.elt.height;
+        this.canvas.width = this.elt.videoWidth;
+        this.canvas.height = this.elt.videoHeight;
         this.width = this.canvas.width;
         this.height = this.canvas.height;
       }
@@ -1822,36 +1713,25 @@
   p5.MediaElement.prototype.get = function(x, y, w, h){
     if (this.loadedmetadata) { // wait for metadata
       return p5.Renderer2D.prototype.get.call(this, x, y, w, h);
-    } else if (!x) {
-      return new p5.Image(1, 1);
-    } else {
-      return [0, 0, 0, 255];
-    }
+    } else return [0, 0, 0, 255];
   };
   p5.MediaElement.prototype.set = function(x, y, imgOrCol){
     if (this.loadedmetadata) { // wait for metadata
       p5.Renderer2D.prototype.set.call(this, x, y, imgOrCol);
     }
   };
-  p5.MediaElement.prototype.copy = function(){
-    p5.Renderer2D.prototype.copy.apply(this, arguments);
-  };
-  p5.MediaElement.prototype.mask = function(){
-    this.loadPixels();
-    p5.Image.prototype.mask.apply(this, arguments);
-  };
   /**
    *  Schedule an event to be called when the audio or video
    *  element reaches the end. If the element is looping,
    *  this will not be called. The element is passed in
    *  as the argument to the onended callback.
-   *
+   *  
    *  @method  onended
    *  @param  {Function} callback function to call when the
    *                              soundfile has ended. The
    *                              media element will be passed
    *                              in as the argument to the
-   *                              callback.
+   *                              callback.                            
    *  @return {Object/p5.MediaElement}
    *  @example
    *  <div><code>
