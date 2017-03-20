@@ -71,6 +71,7 @@
   * [Visualizing Machine Learning](https://vimeo.com/181211762) by Cassie Tarakajian
   * [Artificial Intelligence in Google's Dinosaur](https://www.youtube.com/watch?v=P7XHzqZjXQs)
   * [Transpose](http://www.hannahishere.com/project/songemotion-visualization/) by Hannah Davis
+  * [Handwriting Generation with RNN and p5.js](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/)
   * [Land Lines](https://medium.com/@zachlieberman/land-lines-e1f88c745847#.1157xmhw8)
   * [TerraPattern](http://www.terrapattern.com/) by [Golan Levin and collaborators](http://www.terrapattern.com/team)
   * [Browser Self-Driving Car](http://janhuenermann.com/projects/learning-to-drive),[Learning to Drive Blog Post](http://lab.janhuenermann.de/article/learning-to-drive)
