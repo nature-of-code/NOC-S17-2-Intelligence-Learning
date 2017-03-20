@@ -1,7 +1,7 @@
 var tree;
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(canvasWidth+40, canvasHeight);
   background(51);
   tree = new Tree();
   for (var i = 0; i < 100; i++) {

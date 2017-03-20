@@ -1,9 +1,15 @@
+// Daniel Shiffman
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
+
+// Node in the tree
 function Node(val) {
   this.value = val;
   this.left = null;
   this.right = null;
 }
 
+// Search the tree for a value
 Node.prototype.search = function(val) {
   if (this.value == val) {
     return this;
@@ -15,6 +21,7 @@ Node.prototype.search = function(val) {
   return null;
 }
 
+// Visit a node
 Node.prototype.visit = function() {
   if (this.left != null) {
     this.left.visit();
@@ -25,6 +32,7 @@ Node.prototype.visit = function() {
   }
 }
 
+// Add a node
 Node.prototype.addNode = function(n) {
   if (n.value < this.value) {
     if (this.left == null) {
