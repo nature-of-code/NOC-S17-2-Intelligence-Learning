@@ -57,14 +57,15 @@
 ## Overview of Syllabus and Topics
 
 ## Glossary of terms
-  * sample
-  * features
-  * labels
-  * prediction
-  * cost / loss
-  * training, training data
-  * model
-  * learning rate
+  * [Sample](https://en.wikipedia.org/wiki/Sample_(statistics))
+  * [Feature](https://en.wikipedia.org/wiki/Feature_(machine_learning))
+  * [Label](https://en.wikipedia.org/wiki/Supervised_learning)
+  * [Prediction](https://en.wikipedia.org/wiki/Prediction#Statistics)
+  * [Cost / loss](https://en.wikipedia.org/wiki/Loss_function)
+  * [Training](https://en.wikipedia.org/wiki/Computational_learning_theory)
+  * [Training set, test set, validation set](https://en.wikipedia.org/wiki/Test_set)
+  * [Model](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
+  * [Learning rate (step size)](https://en.wikipedia.org/wiki/Gradient_descent)
 
 ## Project References
   * [Artificial Intelligence in Google's Dinosaur](https://www.youtube.com/watch?v=P7XHzqZjXQs)
