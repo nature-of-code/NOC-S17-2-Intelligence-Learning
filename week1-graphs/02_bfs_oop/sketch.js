@@ -36,7 +36,7 @@ function bfs() {
   queue.push(graph.start);
 
   while (queue.length > 0) {
-    var person = queue.pop();
+    var person = queue.shift();
     if (!person.searched) {
       if (person == graph.end) {
         path.push(person);

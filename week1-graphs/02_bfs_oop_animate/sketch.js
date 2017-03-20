@@ -51,7 +51,7 @@ function draw() {
   graph.show();
 
   if (queue.length > 0) {
-    var node = queue.pop();
+    var node = queue.shift();
     node.highlight();
     if (!node.searched) {
       if (node == graph.end) {

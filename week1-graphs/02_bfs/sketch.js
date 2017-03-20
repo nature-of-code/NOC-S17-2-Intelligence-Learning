@@ -28,7 +28,7 @@ function setup() {
 
   queue.push('you');
   while (queue.length > 0) {
-    var person = queue.pop();
+    var person = queue.shift();
     console.log(person);
     if (!searched[person]) {
       if (isEnd(person)) {
