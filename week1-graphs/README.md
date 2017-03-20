@@ -81,5 +81,8 @@
   * Breadth-First Search
   * Depth-First Search
   * Dijkstra's Algorithm
+    - [Computerphile video](https://www.youtube.com/watch?v=GazC3A4OQTE)
   * A*
+    - Coding Train videos: [Part1](https://www.youtube.com/watch?v=aKYlikFAV4k) [Part2](https://www.youtube.com/watch?v=EaZxUCWAjb0) [Part3](https://www.youtube.com/watch?v=jwRT4PCT6RU)
+    - [Computerphile video](https://www.youtube.com/watch?v=ySN5Wnu88nE)
   * Traveling Salesperson Problem
