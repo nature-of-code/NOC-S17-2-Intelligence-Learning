@@ -58,14 +58,15 @@
 ## Overview of Syllabus and Topics
 
 ## Glossary of terms
-  * sample
-  * features
-  * labels
-  * prediction
-  * cost / loss
-  * training, training data
-  * model
-  * learning rate
+  * [Sample](https://en.wikipedia.org/wiki/Sample_(statistics))
+  * [Feature](https://en.wikipedia.org/wiki/Feature_(machine_learning))
+  * [Label](https://en.wikipedia.org/wiki/Supervised_learning)
+  * [Prediction](https://en.wikipedia.org/wiki/Prediction#Statistics)
+  * [Cost / loss](https://en.wikipedia.org/wiki/Loss_function)
+  * [Training](https://en.wikipedia.org/wiki/Computational_learning_theory)
+  * [Training set, test set, validation set](https://en.wikipedia.org/wiki/Test_set)
+  * [Model](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
+  * [Learning rate (step size)](https://en.wikipedia.org/wiki/Gradient_descent)
 
 ## Project References
   * [Visualizing Machine Learning](https://vimeo.com/181211762) by Cassie Tarakajian
@@ -80,12 +81,24 @@
 
 ## Algorithms
   * Big-O notation
+    - [CS50 video](https://www.youtube.com/watch?v=IM9sHGlYV5A)
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Time_complexity)
   * Binary Search Tree
+    - [Coding Train video](https://www.youtube.com/watch?v=hVSHlFjTeqg&t=2h35m10s) on binary trees
+    - [CS50 video](https://www.youtube.com/watch?v=5xlIPT1FRcA)
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Binary_search_algorithm)
   * Breadth-First Search
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Breadth-first_search)
   * Depth-First Search
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Depth-first_search)
   * Dijkstra's Algorithm
+    - [Computerphile video](https://www.youtube.com/watch?v=GazC3A4OQTE)
+    - [Wikipedia article](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
   * A*
+    - Coding Train videos: [Part1](https://www.youtube.com/watch?v=aKYlikFAV4k) [Part2](https://www.youtube.com/watch?v=EaZxUCWAjb0) [Part3](https://www.youtube.com/watch?v=jwRT4PCT6RU)
+    - [Computerphile video](https://www.youtube.com/watch?v=ySN5Wnu88nE)
   * Traveling Salesperson Problem
+    - Coding Train videos: [Part1](https://www.youtube.com/watch?v=BAejnwN4Ccw) [Part2](https://www.youtube.com/watch?v=goUlyp4rwiU) [Part3](https://www.youtube.com/watch?v=9Xy-LMAfglE)
 
 ## Example applications
   * Animal Guessing Game
