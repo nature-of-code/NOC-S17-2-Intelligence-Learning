@@ -68,6 +68,7 @@
   * learning rate
 
 ## Project References
+  * [Visualizing Machine Learning](https://vimeo.com/181211762) by Cassie Tarakajian
   * [Artificial Intelligence in Google's Dinosaur](https://www.youtube.com/watch?v=P7XHzqZjXQs)
   * [Transpose](http://www.hannahishere.com/project/songemotion-visualization/) by Hannah Davis
   * [Land Lines](https://medium.com/@zachlieberman/land-lines-e1f88c745847#.1157xmhw8)
