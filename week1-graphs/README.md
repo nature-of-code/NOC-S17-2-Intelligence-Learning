@@ -80,9 +80,14 @@
 
 ## Algorithms
   * Big-O notation
-  * Binary Search
+  * Binary Search Tree
   * Breadth-First Search
   * Depth-First Search
   * Dijkstra's Algorithm
   * A*
   * Traveling Salesperson Problem
+
+## Example applications
+  * Animal Guessing Game
+  * Six Degrees of Kevin Bacon
+  * Maze Generator and Solver
