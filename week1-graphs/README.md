@@ -70,7 +70,7 @@
   * [Learning rate (step size)](https://en.wikipedia.org/wiki/Gradient_descent)
 
 ## Project References
-  * [Visualizing Machine Learning](https://vimeo.com/181211762) by Cassie Tarakajian
+  * [Visualizing Neural Networks in Virtual Space](https://medium.com/dbrs-innovation-labs/visualizing-neural-networks-in-virtual-space-7e3f62f7177#.5y96q3g6g) by Cassie Tarakajian
   * [Artificial Intelligence in Google's Dinosaur](https://www.youtube.com/watch?v=P7XHzqZjXQs)
   * [Transpose](http://www.hannahishere.com/project/songemotion-visualization/) by Hannah Davis
   * [Handwriting Generation with RNN and p5.js](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/)
@@ -104,8 +104,11 @@
 
 ## Misc Technical Discussion
   * What is "Prototype" [Coding Train tutorial](https://www.youtube.com/watch?v=hS_WqkyUah8)
+  * Animating algorithm progress vs. "all at once"
 
-## Example applications
+## Code Examples
+
+## Example Project Scenarios
   * Animal Guessing Game
   * Six Degrees of Kevin Bacon
   * Maze Generator and Solver
