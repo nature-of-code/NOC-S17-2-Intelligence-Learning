@@ -15,27 +15,16 @@ function Node(data, y, n) {
 
 var readlineSync = require('readline-sync');
 var fs = require("fs");
-// Add some encouragement
-var words = ["That's great!", "You know your animals!", "Let's play again!", "One more animal!"];
-var word = words[Math.floor(Math.random() * words.length)];
-
-// Giving thanks
-var thanks = ["Thanks!", "Nice one!"];
-var thank = thanks[Math.floor(Math.random() * words.length)];
-
-// Play again
-var playAgain = ["Let's play again!", "That was fun, let's play again!"]
-var playAgainLoad = playAgain[Math.floor(Math.random() * words.length)];
 
 // Read in an animal decision tree
 var tree = fs.readFileSync('tree.json');
 var root = JSON.parse(tree);
 var node;
 
-console.log('Welcome to the animal game!\nThis game is a lot of fun!\nThink of an animal,\nthen I will try to guess it!\nIf I do not know know your animal you can teach me!\nReady to play?!');
+console.log('Welcome to the animal game!\nThink of an animal,\nand I will try to guess it!\nIf I do not know know your animal you can teach me!');
 
 // Play the game
-while (ask("Do you want to play?")) {
+while (ask("\nDo you want to play?")) {
   node = root;
   go();
 }
@@ -56,7 +45,7 @@ function go() {
     train(node);
   } else {
     // Right!
-    console.log(word);
+    console.log("I knew it!");
   }
 }
 
@@ -79,9 +68,8 @@ function train(node) {
   if (ask("Answer for a " + answer + ": " + question)) {
     node.yes = new Node(answer);
     node.no = new Node(guess);
-    console.log(thank);
     console.log ("Great! Now I know about " + answer + "s !");
-    console.log(playAgainLoad);
+    console.log("Play again?");
   } else {
     node.yes = new Node(guess);
     node.no = new Node(answer);
