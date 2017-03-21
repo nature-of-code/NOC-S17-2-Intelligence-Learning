@@ -1,6 +1,3 @@
-var canvasWidth = 720;
-var canvasHeight = 480;
-
 function Node(val, x, y) {
   this.value = val;
   this.left = null;
@@ -29,13 +26,15 @@ Node.prototype.visit = function(parent) {
   fill(255);
   noStroke();
   textAlign(CENTER);
-  textSize(9);
+  textSize(12);
   //text(this.value, this.x, this.y);
-  stroke(255);
-  //noFill();
-  ellipse(this.x, this.y, 11, 11);
+  stroke(255, 100);
   line(parent.x, parent.y, this.x, this.y);
+  stroke(255);
   fill(0);
+  ellipse(this.x, this.y, 24, 24);
+  noStroke();
+  fill(255);
   text(this.value, this.x, this.y+4);
   if (this.right != null) {
     this.right.visit(this);
