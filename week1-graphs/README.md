@@ -10,7 +10,7 @@
   * Is there a difference between software that is intelligent and software that "appears" intelligent?
   * The algorithms and math around this stuff are scary and impenetrable.
   * Can we learn this together?
-  * What creative experiments can you make?
+  * What creative experiments can we make?
   * Can we make the world a better place?
 
 ## Structure / Overview
