@@ -91,7 +91,7 @@
     - [CS50 video](https://www.youtube.com/watch?v=IM9sHGlYV5A)
     - [Wikipedia article](https://en.wikipedia.org/wiki/Time_complexity)
   * Binary Search Tree
-    - [Coding Train video](https://www.youtube.com/watch?v=hVSHlFjTeqg&t=2h35m10s) on binary trees
+    - [Coding Train video](https://www.youtube.com/watch?v=ZNH0MuQ51m4) on binary trees
     - [CS50 video](https://www.youtube.com/watch?v=5xlIPT1FRcA)
     - [Wikipedia article](https://en.wikipedia.org/wiki/Binary_search_algorithm)
   * Breadth-First Search
