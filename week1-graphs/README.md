@@ -58,6 +58,12 @@
 
 ## Overview of Syllabus and Topics
 
+## What languages / tools?
+  * Today is a JS day.
+  * But tomorrow maybe a _________ day.
+  * You can use anything and everything you like for this course.
+  * For the most part, even if we branch out into python and other frameworks, I'll look to communicate back into Processing or p5 for drawing.
+
 ## Glossary of terms
   * [Sample](https://en.wikipedia.org/wiki/Sample_(statistics))
   * [Feature](https://en.wikipedia.org/wiki/Feature_(machine_learning))
