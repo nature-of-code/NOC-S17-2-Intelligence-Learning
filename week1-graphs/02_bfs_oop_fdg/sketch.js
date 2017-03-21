@@ -25,16 +25,16 @@ function setup() {
   graph.setEnd(thom);
 
 
-  background(51);
-
-  for (var i=0; i<10000; i++) {
-    var change = graph.simulate();
-    if (change < 0.1) break; 
-  }
-
-  graph.show();
   bfs();
+
 }
+
+function draw() {
+  background(51);
+  graph.simulate();
+  graph.show();
+}
+
 
 function bfs() {
   var queue = [];

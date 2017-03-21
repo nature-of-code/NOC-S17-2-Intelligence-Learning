@@ -1,13 +1,22 @@
 function Node(label) {
-  this.x = random(50,width-50);
-  this.y = random(50,height-50);
-  this.velX = 0;
-  this.velY = 0;
+  this.pos = createVector(random(width),random(height));
+  this.vel = createVector(0,0);
 
   this.label = label;
   this.edges = [];
   this.parent = null;
   this.searched = false;
+
+  this.col = color(0);
+}
+
+Node.prototype.isConnected = function(neighbor) {
+  var index = this.edges.indexOf(neighbor);
+  if (index >= 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 Node.prototype.connect = function(neighbor) {
@@ -20,24 +29,21 @@ Node.prototype.show = function() {
   textAlign(CENTER);
   var w = textWidth(this.label);
   stroke(255);
-  fill(0);
-  ellipse(this.x, this.y, w * 2, w * 2);
+  fill(this.col);
+  ellipse(this.pos.x, this.pos.y, w * 2, w * 2);
   fill(255);
   noStroke();
-  text(this.label, this.x, this.y);
+  text(this.label, this.pos.x, this.pos.y);
 }
 
 Node.prototype.highlight = function() {
-  var w = textWidth(this.label);
-  noStroke();
-  fill(0, 255, 0, 100);
-  ellipse(this.x, this.y, w * 2, w * 2);
+  this.col = color(0, 150, 0);
 }
 
 Node.prototype.showEdges = function() {
   noFill();
   stroke(255);
   for (var i = 0; i < this.edges.length; i++) {
-    line(this.x, this.y, this.edges[i].x, this.edges[i].y);
+    line(this.pos.x, this.pos.y, this.edges[i].pos.x, this.edges[i].pos.y);
   }
 }
