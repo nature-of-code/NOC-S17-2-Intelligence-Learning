@@ -36,7 +36,7 @@
     * Reinforcement Learning
     * Generative output
 
-## What is Deep Learning
+## What is Deep Learning?
   * Machine learning with "deep" neural networks.
   * Deep meaning "many layers" deep.
 
@@ -67,7 +67,7 @@
   * [Training](https://en.wikipedia.org/wiki/Computational_learning_theory)
   * [Training set, test set, validation set](https://en.wikipedia.org/wiki/Test_set)
   * [Model](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
-  * [Learning rate (step size)](https://en.wikipedia.org/wiki/Gradient_descent)
+  * [Learning rate (step size) aka Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent)
 
 ## Project References
   * [Visualizing Neural Networks in Virtual Space](https://medium.com/dbrs-innovation-labs/visualizing-neural-networks-in-virtual-space-7e3f62f7177#.5y96q3g6g) by Cassie Tarakajian
@@ -103,10 +103,8 @@
     - Coding Train videos: [Part1](https://www.youtube.com/watch?v=BAejnwN4Ccw) [Part2](https://www.youtube.com/watch?v=goUlyp4rwiU) [Part3](https://www.youtube.com/watch?v=9Xy-LMAfglE)
 
 ## Misc Technical Discussion
-  * What is "Prototype" [Coding Train tutorial](https://www.youtube.com/watch?v=hS_WqkyUah8)
+  * What is "Prototype"? [Coding Train tutorial](https://www.youtube.com/watch?v=hS_WqkyUah8)
   * Animating algorithm progress vs. "all at once"
-
-## Code Examples
 
 ## Example Project Scenarios
   * Animal Guessing Game
