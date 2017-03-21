@@ -2,6 +2,7 @@ function Node(val, x, y) {
   this.value = val;
   this.left = null;
   this.right = null;
+  this.distance = 2;
   this.x = x;
   this.y = y;
 }
@@ -25,11 +26,16 @@ Node.prototype.visit = function(parent) {
   fill(255);
   noStroke();
   textAlign(CENTER);
-  text(this.value, this.x, this.y);
-  stroke(255);
-  noFill();
-  ellipse(this.x, this.y, 20, 20);
+  textSize(12);
+  //text(this.value, this.x, this.y);
+  stroke(255, 100);
   line(parent.x, parent.y, this.x, this.y);
+  stroke(255);
+  fill(0);
+  ellipse(this.x, this.y, 24, 24);
+  noStroke();
+  fill(255);
+  text(this.value, this.x, this.y+4);
   if (this.right != null) {
     this.right.visit(this);
   }
@@ -39,18 +45,19 @@ Node.prototype.addNode = function(n) {
   if (n.value < this.value) {
     if (this.left == null) {
       this.left = n;
-      this.left.x = this.x - 50;
-      this.left.y = this.y + 20;
+      this.left.x = this.x - (canvasWidth/Math.pow(2,n.distance));
+      this.left.y = this.y + (canvasHeight/12);
     } else {
+      n.distance++;
       this.left.addNode(n)
     }
   } else if (n.value > this.value) {
     if (this.right == null) {
       this.right = n;
-      this.right.x = this.x + 50;
-      this.right.y = this.y + 20;
-
+      this.right.x = this.x + (canvasWidth/Math.pow(2,n.distance));
+      this.right.y = this.y + (canvasHeight/12);
     } else {
+      n.distance++;
       this.right.addNode(n);
     }
   }

@@ -1,0 +1,99 @@
+{
+  "data": "Are you a mammal?",
+  "yes": {
+    "data": "Do you have whiskers?",
+    "yes": {
+      "data": "Are you very small?",
+      "yes": {
+        "data": "mouse"
+      },
+      "no": {
+        "data": "Are you a big cat?",
+        "yes": {
+          "data": "Do you have orange and black stripes?",
+          "yes": {
+            "data": "tiger"
+          },
+          "no": {
+            "data": "lion"
+          }
+        },
+        "no": {
+          "data": "Do you have a long mostly hairless tail?",
+          "yes": {
+            "data": "rat"
+          },
+          "no": {
+            "data": "house cat"
+          }
+        }
+      }
+    },
+    "no": {
+      "data": "Do you live in water?",
+      "yes": {
+        "data": "Do you have baleen in your mouth?",
+        "yes": {
+          "data": "whale"
+        },
+        "no": {
+          "data": "dolphin"
+        }
+      },
+      "no": {
+        "data": "Do you live in trees?",
+        "yes": {
+          "data": "koala"
+        },
+        "no": {
+          "data": "Do you have really big antlers?",
+          "yes": {
+            "data": "moose"
+          },
+          "no": {
+            "data": "Are kind of grey skinned?",
+            "yes": {
+              "data": "elephant"
+            },
+            "no": {
+              "data": "dog"
+            }
+          }
+        }
+      }
+    }
+  },
+  "no": {
+    "data": "Do you live exclusively in water?",
+    "yes": {
+      "data": "Do you have live primarily on the sea floor?",
+      "yes": {
+        "data": "sea urchin"
+      },
+      "no": {
+        "data": "fish"
+      }
+    },
+    "no": {
+      "data": "Do you have a very long neck?",
+      "yes": {
+        "data": "giraffe."
+      },
+      "no": {
+        "data": "Do you spend most of the day in water?",
+        "yes": {
+          "data": "hippo"
+        },
+        "no": {
+          "data": "Are you commonly found in cities?",
+          "yes": {
+            "data": "pigeon"
+          },
+          "no": {
+            "data": "eagle"
+          }
+        }
+      }
+    }
+  }
+}
