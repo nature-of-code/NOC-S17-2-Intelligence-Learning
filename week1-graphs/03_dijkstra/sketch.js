@@ -2,6 +2,8 @@
 // Grokking Algorithms
 // http://amzn.to/2n7KF4h
 
+// Each node in the graph contains a list of pairs in the form: 
+// target node: cost to go to that node from self
 var graph = {
   'start': {
     'a': 6,
@@ -17,11 +19,20 @@ var graph = {
   'fin': {}
 }
 
+// The variable costs stores the costs between the start node and any other node
+// It is updated when the algorithm is executed.
+// All the nodes have to be enlisted here with their costs from start
+// For the unknown costs, Infinity is the initial value
 var costs = {
   'a': 6,
   'b': 2,
   'fin': Infinity
 };
+
+// This variable stores the parents nodes (or "previous" nodes)
+// for every node in the path
+// It has to be initialized with the nodes that have "start" as a parent
+// The other nodes will be added by the algorithm 
 var parents = {
   'a': 'start',
   'b': 'start'
