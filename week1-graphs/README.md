@@ -1,17 +1,5 @@
 ## Why this course?
   * Background on "The Nature of Code"
-  * Not an AI course.
-  * Not a Machine Learning course.
-  * Not a Deep Learning course.
-  * Not an art course.
-  * Not a science course.
-  * What's left?
-  * How can we capture the magic and wonder of "intelligence" and "learning" in software?
-  * Is there a difference between software that is intelligent and software that "appears" intelligent?
-  * The algorithms and math around this stuff are scary and impenetrable.
-  * Can we learn this together?
-  * What creative experiments can we make?
-  * Can we make the world a better place?
 
 ## Structure / Overview
   * "Research" presentations
@@ -25,7 +13,6 @@
 
 ## What is Machine Learning?
   * "A field of study that gives computers the ability to learn without being explicitly programmed." [Arthur Samuel](https://en.wikipedia.org/wiki/Arthur_Samuel), 1957 "Samuel Checkers": the world's first self-learning program.
-  * Data analysis
   * Data --> Meaning
   * Types of Machine Learning
     * Rule-based Systems
@@ -59,10 +46,9 @@
 ## Overview of Syllabus and Topics
 
 ## What languages / tools?
-  * Today is a JS day.
-  * But tomorrow maybe a _________ day.
+  * I will mostly be using Processing and p5.js.
   * You can use anything and everything you like for this course.
-  * For the most part, even if we branch out into python and other frameworks, I'll look to communicate back into Processing or p5 for drawing.
+  * We will likely branch out into python when using some machine learning frameworks (like tensorflow).
 
 ## Glossary of terms
   * [Sample](https://en.wikipedia.org/wiki/Sample_(statistics))
@@ -110,6 +96,7 @@
 
 ## Misc Technical Discussion
   * What is "Prototype"? [Coding Train tutorial](https://www.youtube.com/watch?v=hS_WqkyUah8)
+  * What is an "associative array"? [Coding Train tutorial](https://www.youtube.com/watch?v=_5jdE6RKxVk)
   * Animating algorithm progress vs. "all at once"
 
 ## Example Project Scenarios
