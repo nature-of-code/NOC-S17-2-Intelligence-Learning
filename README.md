@@ -28,6 +28,7 @@ Prerequisites?
 Week 1 - Introduction (March 21/22)
 -------------------------------
 * [Week 1 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week1-graphs/README.md)
+* [Week 1 Homework](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Homework-1)
 * Class Intro / Overview
 * Algorithms
   * Big O notation
