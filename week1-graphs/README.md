@@ -99,7 +99,7 @@
   * What is an "associative array"? [Coding Train tutorial](https://www.youtube.com/watch?v=_5jdE6RKxVk)
   * Animating algorithm progress vs. "all at once"
 
-## Example Project Scenarios
-  * Animal Guessing Game
-  * Six Degrees of Kevin Bacon
-  * Maze Generator and Solver
+## Examples and Homework
+  * [https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/edit/master/week1-graphs/](All code examples)
+  * [Week 1 Homework](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Homework-1)
+ 
