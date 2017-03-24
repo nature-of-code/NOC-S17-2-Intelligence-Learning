@@ -1,18 +1,28 @@
-var canvasWidth = 720;
-var canvasHeight = 480;
+// Daniel Shiffman
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
+// Binary tree
 var tree;
 
+
 function setup() {
-  createCanvas(canvasWidth+40, canvasHeight);
-  background(51);
+  createCanvas(800, 600);
+
+  // New tree
   tree = new Tree();
-  for (var i = 0; i < 20; i++) {
+
+  // Add ten random values
+  for (var i = 0; i < 10; i++) {
     tree.addValue(floor(random(0, 100)));
   }
-  console.log(tree);
+
+  background(0);
+
+  // Traverse the tree
   tree.traverse();
 
+  // Search the tree for 10
   var result = tree.search(10);
   if (result == null) {
     console.log('not found');

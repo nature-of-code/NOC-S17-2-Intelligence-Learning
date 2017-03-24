@@ -23,10 +23,13 @@ Node.prototype.search = function(val) {
 
 // Visit a node
 Node.prototype.visit = function() {
+  // Recursively go left
   if (this.left != null) {
     this.left.visit();
   }
+  // Print out value
   console.log(this.value);
+  // Recursively go right
   if (this.right != null) {
     this.right.visit();
   }
