@@ -62,15 +62,7 @@
   * [Learning rate (step size) aka Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent)
 
 ## Project References
-  * [Visualizing Neural Networks in Virtual Space](https://medium.com/dbrs-innovation-labs/visualizing-neural-networks-in-virtual-space-7e3f62f7177#.5y96q3g6g) by Cassie Tarakajian
-  * [Artificial Intelligence in Google's Dinosaur](https://www.youtube.com/watch?v=P7XHzqZjXQs)
-  * [Transpose](http://www.hannahishere.com/project/songemotion-visualization/) by Hannah Davis
-  * [Handwriting Generation with RNN and p5.js](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/)
-  * [Land Lines](https://medium.com/@zachlieberman/land-lines-e1f88c745847#.1157xmhw8)
-  * [TerraPattern](http://www.terrapattern.com/) by [Golan Levin and collaborators](http://www.terrapattern.com/team)
-  * [Browser Self-Driving Car](http://janhuenermann.com/projects/learning-to-drive),[Learning to Drive Blog Post](http://lab.janhuenermann.de/article/learning-to-drive)
-  * [The Infinite Drum Machine](https://aiexperiments.withgoogle.com/drum-machine/view/)
-  * [ALT-AI exhibition](http://genekogan.com/alt-AI/#exhibition)
+  * [Moved to this wiki](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/References-Resources)
 
 ## Algorithms
   * Big-O notation
@@ -102,4 +94,3 @@
 ## Examples and Homework
   * [https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/edit/master/week1-graphs/](All code examples)
   * [Week 1 Homework](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Homework-1)
- 
