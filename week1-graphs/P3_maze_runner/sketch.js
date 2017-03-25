@@ -1,6 +1,6 @@
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
 // Videos
 // https://youtu.be/HyK_Q5rrcr4
@@ -26,6 +26,7 @@ function setup() {
   rows = floor(height / w);
   //frameRate(5);
 
+  // Create the grid
   for (var j = 0; j < rows; j++) {
     for (var i = 0; i < cols; i++) {
       var cell = new Cell(i, j);
@@ -33,60 +34,70 @@ function setup() {
     }
   }
 
+  // Create the maze all at once
   createMaze();
 
   // Start and end
   start = grid[0];
   end = grid[grid.length - 1];
 
-  // openSet starts with beginning only
+  // openSet starts with beginning only (A*)
   openSet.push(start);
 }
 
 function draw() {
   background(51);
+  // Draw maze
   for (var i = 0; i < grid.length; i++) {
     grid[i].show();
   }
+  // Animate A*
   astar();
 }
 
 
 function createMaze() {
+  // Start with the first spot
   var current = grid[0];
   current.visited = true;
-  // current.highlight();
 
   // STEP 1
   while (true) {
+    // STEP 1: check available neighbors and pick a random one
     var next = current.checkNeighbors();
+    // If it's valid
     if (next) {
+      // It's done
       next.visited = true;
 
-      // STEP 2
+      // STEP 2: Keep track of where were in the stack
       stack.push(current);
 
-      // STEP 3
+      // STEP 3: Remove wallks between
       removeWalls(current, next);
 
-      // STEP 4
+      // STEP 4: Keep going
       current = next;
     } else if (stack.length > 0) {
+      // Go back to the stack
       current = stack.pop();
+      // All done
     } else {
       break;
     }
   }
 }
 
+// Find the 1D spot in array for 2D location
 function index(i, j) {
-  if (i < 0 || j < 0 || i > cols - 1 || j > rows - 1) {
+  if (i < 0 || j < 0 || i > cols-1 || j > rows-1) {
     return -1;
   }
   return i + j * cols;
 }
 
 
+// Remove any walls between
 function removeWalls(a, b) {
   var x = a.i - b.i;
   if (x === 1) {
@@ -105,8 +116,6 @@ function removeWalls(a, b) {
     b.walls[0] = false;
   }
 }
-
-
 
 // AStar stuff
 

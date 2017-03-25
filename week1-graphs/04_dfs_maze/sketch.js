@@ -45,7 +45,7 @@ function draw() {
     grid[i].show();
   }
 
-  // It's done
+  // Current is checked
   current.visited = true;
   // Highlighg it
   current.highlight();

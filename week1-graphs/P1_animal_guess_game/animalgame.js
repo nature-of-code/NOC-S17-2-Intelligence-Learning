@@ -1,10 +1,10 @@
-// 8 nights of Hanukkah 2016 Examples
-// Night 5: Animal Guessing Game
-// https://www.reddit.com/r/dailyprogrammer/comments/34asls/20150429_challenge_212_intermediate_animal_guess/
 // Daniel Shiffman
-// http://codingrainbow.com/
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
-//don't forget about the ;!
+// Animal Guessing Game
+// https://www.reddit.com/r/dailyprogrammer/comments/34asls/20150429_challenge_212_intermediate_animal_guess/
+
 
 // Node has data and a yes (left) and no (right) answer
 function Node(data, y, n) {

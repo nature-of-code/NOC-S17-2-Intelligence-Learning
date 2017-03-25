@@ -39,7 +39,7 @@ function setup() {
   background(51);
   graph.show();
 
-  // Run th search algorithm
+  // Run the search algorithm
   bfs();
 }
 
