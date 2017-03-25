@@ -1,6 +1,6 @@
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
 // Videos
 // https://youtu.be/HyK_Q5rrcr4
@@ -12,12 +12,15 @@
 // Recursive backtracker
 // https://en.wikipedia.org/wiki/Maze_generation_algorithm
 
+// A cell object
 function Cell(i, j) {
   this.i = i;
   this.j = j;
+  // TOP RIGHT BOTTOM LEFT
   this.walls = [true, true, true, true];
   this.visited = false;
 
+  // Any available neighbors?
   this.checkNeighbors = function() {
     var neighbors = [];
 
@@ -39,28 +42,30 @@ function Cell(i, j) {
       neighbors.push(left);
     }
 
+    // Pick a random one
     if (neighbors.length > 0) {
       var r = floor(random(0, neighbors.length));
       return neighbors[r];
     } else {
       return undefined;
     }
-
-
   }
+
+  // Highlight color
   this.highlight = function() {
     var x = this.i*w;
     var y = this.j*w;
     noStroke();
     fill(0, 0, 255, 100);
     rect(x, y, w, w);
-
   }
 
+  // Draw
   this.show = function() {
     var x = this.i*w;
     var y = this.j*w;
     stroke(255);
+    // Draw any walls between
     if (this.walls[0]) {
       line(x    , y    , x + w, y);
     }

@@ -1,6 +1,6 @@
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
 // Videos
 // https://youtu.be/HyK_Q5rrcr4
@@ -26,6 +26,7 @@ function setup() {
   rows = floor(height/w);
   //frameRate(5);
 
+  // Create a grid of Cell objects
   for (var   j = 0; j < rows; j++) {
     for (var i = 0; i < cols; i++) {
       var cell = new Cell(i, j);
@@ -33,38 +34,44 @@ function setup() {
     }
   }
 
+  // Start with the first
   current = grid[0];
-
-
 }
 
 function draw() {
   background(51);
+  // Draw everything
   for (var i = 0; i < grid.length; i++) {
     grid[i].show();
   }
 
+  // It's done
   current.visited = true;
+  // Highlighg it
   current.highlight();
-  // STEP 1
+  // STEP 1: check available neighbors and pick a random one
   var next = current.checkNeighbors();
+  // If it's valid
   if (next) {
+    // It's done
     next.visited = true;
 
-    // STEP 2
+    // STEP 2: Keep track of where were in the stack
     stack.push(current);
 
-    // STEP 3
+    // STEP 3: Remove wallks between
     removeWalls(current, next);
 
-    // STEP 4
+    // STEP 4: Keep going
     current = next;
   } else if (stack.length > 0) {
+    // Go back to the stack
     current = stack.pop();
   }
 
 }
 
+// Find the 1D spot in array for 2D location
 function index(i, j) {
   if (i < 0 || j < 0 || i > cols-1 || j > rows-1) {
     return -1;
@@ -73,6 +80,7 @@ function index(i, j) {
 }
 
 
+// Remove any walls between
 function removeWalls(a, b) {
   var x = a.i - b.i;
   if (x === 1) {

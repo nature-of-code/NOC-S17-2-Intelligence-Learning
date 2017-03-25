@@ -1,8 +1,12 @@
+// Daniel Shiffman
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
+
 // Based on
 // Grokking Algorithms
 // http://amzn.to/2n7KF4h
 
-// Each node in the graph contains a list of pairs in the form: 
+// Each node in the graph contains a list of pairs in the form:
 // target node: cost to go to that node from self
 var graph = {
   'start': {
@@ -32,17 +36,20 @@ var costs = {
 // This variable stores the parents nodes (or "previous" nodes)
 // for every node in the path
 // It has to be initialized with the nodes that have "start" as a parent
-// The other nodes will be added by the algorithm 
+// The other nodes will be added by the algorithm
 var parents = {
   'a': 'start',
   'b': 'start'
 };
 
+// Keep track of already processed nodes
 var processed = {};
 
+// Find the node with the lowest cost that is not processed
 function lowestCost(costs) {
   var record = Infinity;
   var lowest;
+  // This is like a "foreach" loop
   for (node in costs) {
     if (costs[node] < record && !processed[node]) {
       record = costs[node];
@@ -56,22 +63,31 @@ function lowestCost(costs) {
 function setup() {
   noCanvas();
 
+  // Start and end
   var start = 'start';
   var end = 'fin';
 
+  // What's the lowest cost
   var node = lowestCost(costs);
 
+  // As long as I still haves somewhere to go
   while (node != undefined) {
+    // What's the cost?
     var cost = costs[node];
+    // What are the neighbors?
     var neighbors = graph[node];
+    // Update costs for all neighbors
     for (n in neighbors) {
       var newcost = cost + neighbors[n];
+      // Is the new cost less?
       if (costs[n] > newcost) {
         costs[n] = newcost;
         parents[n] = node;
       }
     }
+    // It's processed
     processed[node] = true;
+    // Keep going
     node = lowestCost(costs);
   }
 
@@ -80,6 +96,7 @@ function setup() {
   console.log(parents);
   console.log(processed);
 
+  // Put together a path
   var path = [end];
   var next = parents[end];
   while (next) {
