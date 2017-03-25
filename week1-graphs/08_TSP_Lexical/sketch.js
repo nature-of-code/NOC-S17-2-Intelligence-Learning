@@ -1,19 +1,27 @@
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
+
 // Code for this video: https://youtu.be/9Xy-LMAfglE
 
+// Array of cities
 var cities = [];
 var totalCities = 5;
 
-var order = [];
-
-var totalPermutations;
-var count = 1;
-
+// Best total distance
 var recordDistance;
+// Best path
 var bestEver;
 
+// An order of cities
+var order = [];
+
+// How many total possibilities
+var totalPermutations;
+// How many have we checked?
+var count = 1;
+
+// How far along are we?
 var progress;
 
 function setup() {
@@ -21,32 +29,38 @@ function setup() {
   canvas.parent('canvas');
   progress = select('#progress');
 
+  // Create the random cities
   for (var i = 0; i < totalCities; i++) {
     var v = createVector(random(width), random(height / 2));
     cities[i] = v;
+    // Start with a defaul order
     order[i] = i;
   }
 
+  // Calculate total distance through array
   var d = calcDistance(cities, order);
   recordDistance = d;
   bestEver = order.slice();
 
+  // Total possibilities
   totalPermutations = factorial(totalCities);
 }
 
 function draw() {
   background(0);
+
+  // Line in the middle
   stroke(255);
-  strokeWeight(1);
   line(0, height / 2, width, height / 2);
-  //frameRate(5);
+
+  // Draw "the best" order so far
+  // All cities
   fill(255);
   for (var i = 0; i < cities.length; i++) {
     ellipse(cities[i].x, cities[i].y, 16, 16);
   }
 
   stroke(255);
-  strokeWeight(2);
   noFill();
   beginShape();
   for (var i = 0; i < order.length; i++) {
@@ -55,11 +69,9 @@ function draw() {
   }
   endShape();
 
-
+  // Draw teh current one we re trying
   translate(0, height / 2);
   stroke(255);
-  strokeWeight(1);
-  noFill();
   beginShape();
   for (var i = 0; i < cities.length; i++) {
     ellipse(cities[i].x, cities[i].y, 16, 16);
@@ -71,14 +83,14 @@ function draw() {
   }
   endShape();
 
-
-
+  // Try a new possibility
   var d = calcDistance(cities, order);
   if (d < recordDistance) {
     recordDistance = d;
     bestEver = order.slice();
   }
 
+  // How far along?
   textSize(15);
   fill(255);
   var percent = 100 * (count / totalPermutations);
@@ -86,13 +98,14 @@ function draw() {
   nextOrder();
 }
 
+// An array swap function
 function swap(a, i, j) {
   var temp = a[i];
   a[i] = a[j];
   a[j] = temp;
 }
 
-
+// Total distance through points based on order
 function calcDistance(points, order) {
   var sum = 0;
   for (var i = 0; i < order.length - 1; i++) {

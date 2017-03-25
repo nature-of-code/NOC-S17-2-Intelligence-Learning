@@ -1,6 +1,7 @@
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
+// Nature of Code: Intelligence and Learning
+// https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
+
 // Code for this video: https://youtu.be/goUlyp4rwiU
 
 var vals = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
