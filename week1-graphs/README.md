@@ -93,5 +93,5 @@
   * Animating algorithm progress vs. "all at once"
 
 ## Examples and Homework
-  * [https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/edit/master/week1-graphs/](All code examples)
+  * [All code examples](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/edit/master/week1-graphs/)
   * [Week 1 Homework](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Homework-1)
