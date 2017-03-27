@@ -91,8 +91,8 @@ function draw() {
     // This is a new algorithm to select based on fitness probability!
     // It only works if all the fitness values are normalized and add up to 1
 
-    // Start at -1 (we are always going to add at least 1 to index)
-    var index = -1;
+    // Start at 0
+    var index = 0;
 
     // Pick a random number between 0 and 1
     var r = random(1);
@@ -106,8 +106,11 @@ function draw() {
       index += 1;
     }
 
+    // Go back one
+    index -= 1;
+
     // Clone exactly, no crossover!
-    newPop[i] = new DNA(population[index].order);
+    newPop[i] = new DNA(totalCities, population[index].order);
   }
 
   // New population!

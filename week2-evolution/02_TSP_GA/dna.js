@@ -25,7 +25,7 @@ function DNA(total, order) {
     // Mutation
     // 50% of the time shuffle one spot to see if it improves
     if (random(1) < 0.5) {
-      newPop[i].shuffle();
+      this.shuffle();
     }
   } else {
 
