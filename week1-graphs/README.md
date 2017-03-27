@@ -70,6 +70,7 @@
     - [Wikipedia article](https://en.wikipedia.org/wiki/Time_complexity)
   * Binary Search Tree
     - [Coding Train video](https://www.youtube.com/watch?v=ZNH0MuQ51m4) on binary trees
+    - [FreeCodeCamp video](https://www.youtube.com/watch?v=5cU1ILGy6dM)
     - [CS50 video](https://www.youtube.com/watch?v=5xlIPT1FRcA)
     - [Wikipedia article](https://en.wikipedia.org/wiki/Binary_search_algorithm)
   * Breadth-First Search
