@@ -42,6 +42,8 @@ Week 1 - Introduction (March 21/22)
 
 Week 2 - Genetic Algorithms (March 28/29)
 ---------------------------
+* [Week 2 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week2-evolution/README.md)
+* [Week 2 Homework](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Homework-2)
 * Search
 * Evolutionary Design
 * Evolutionary Ecosystem
