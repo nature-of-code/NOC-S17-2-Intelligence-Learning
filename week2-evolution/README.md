@@ -25,7 +25,7 @@
   * [The Sports Gene](http://www.nytimes.com/2013/08/13/science/the-sports-gene-considers-the-root-of-athletic-success.html)
 
 ## Related videos
-  * [GA Presentation @ Kickstarter](http://video.natureofcode.com/9.1/)
+  * [GA Presentation @ Kickstarter](https://vimeo.com/63755542)
   * [Shiffman GA YouTube playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bJM3VgzjNV5YxVxUwzALHV)
 
 ## Code examples
