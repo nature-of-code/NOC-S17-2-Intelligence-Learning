@@ -51,6 +51,9 @@
   * We will likely branch out into python when using some machine learning frameworks (like tensorflow).
 
 ## Glossary of terms
+[Statistics and machine learning glossary](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Statistics-and-ML) from the repo wiki.
+
+Wikipedia links:
   * [Sample](https://en.wikipedia.org/wiki/Sample_(statistics))
   * [Feature](https://en.wikipedia.org/wiki/Feature_(machine_learning))
   * [Label](https://en.wikipedia.org/wiki/Supervised_learning)
