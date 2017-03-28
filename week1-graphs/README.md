@@ -37,7 +37,7 @@
   * [Facebook Restores Iconic Vietnam War Photo It Censored for Nudity](https://www.nytimes.com/2016/09/10/technology/facebook-vietnam-war-photo-nudity.html)
 
 ## Main references I'm using for today (and beyond)
-  * [Machine Learning for Artists](ml4a.github.io) by Gene Kogan and collaborators
+  * [Machine Learning for Artists](http://ml4a.github.io/) by Gene Kogan and collaborators
   * [Machine Learning for Musicians and Artists](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info) by Rebecca Fiebrink
   * Not yet released book by [@AndrewGlassner](https://twitter.com/AndrewGlassner)
   * [Grokking Algorithms](http://amzn.to/2n0ZMd8)
