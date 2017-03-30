@@ -98,21 +98,33 @@ DNA.prototype.show = function() {
   }
 }
 
+// This is one way to crossover two paths
 DNA.prototype.crossover = function(other) {
+
+  // Grab two orders
   var order1 = this.order;
   var order2 = other.order;
 
+  // Pick a random start and endpoint
   var start = floor(random(order1.length));
   var end = floor(random(start+1, order1.length+1));
 
+  // Grab part of the the first order
   var neworder = order1.slice(start, end);
+
+  // How many spots do we need to add?
   var leftover = order1.length - neworder.length;
 
+  // Go through order 2
   var count = 0;
   var i = 0;
+  // As long as we aren't finished
   while (count < leftover) {
+    // Take a city from order2
     var city = order2[i];
+    // If it isn't part of the new child path yet
     if (!neworder.includes(city)) {
+      // Add it!
       neworder.push(city);
       count++;
     }
