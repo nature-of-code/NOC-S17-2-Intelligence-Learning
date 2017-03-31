@@ -1,0 +1,65 @@
+{
+    "info": "Data set from http://college.cengage.com/mathematics/brase/understandable_statistics/7e/students/datasets/slr/frames/slr02.html",
+    "samples": [{
+            "chirps": 20,
+            "temp": 88.59999847
+        },
+        {
+            "chirps": 16,
+            "temp": 71.59999847
+        },
+        {
+            "chirps": 19.79999924,
+            "temp": 93.30000305
+        },
+        {
+            "chirps": 18.39999962,
+            "temp": 84.30000305
+        },
+        {
+            "chirps": 17.10000038,
+            "temp": 80.59999847
+        },
+        {
+            "chirps": 15.5,
+            "temp": 75.19999695
+        },
+        {
+            "chirps": 14.69999981,
+            "temp": 69.69999695
+        },
+        {
+            "chirps": 17.10000038,
+            "temp": 82
+        },
+        {
+            "chirps": 15.39999962,
+            "temp": 69.40000153
+        },
+        {
+            "chirps": 16.20000076,
+            "temp": 83.30000305
+        },
+        {
+            "chirps": 15,
+            "temp": 79.59999847
+        },
+        {
+            "chirps": 17.20000076,
+            "temp": 82.59999847
+        },
+        {
+            "chirps": 16,
+            "temp": 80.59999847
+        },
+        {
+            "chirps": 17,
+            "temp": 83.5
+        },
+        {
+            "chirps": 14.39999962,
+            "temp": 76.30000305
+        }
+
+    ]
+}
