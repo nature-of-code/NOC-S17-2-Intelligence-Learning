@@ -107,7 +107,7 @@ DNA.prototype.crossover = function(other) {
 
   // Pick a random start and endpoint
   var start = floor(random(order1.length));
-  var end = floor(random(start+1, order1.length+1));
+  var end = floor(random(start + 1, order1.length + 1));
 
   // Grab part of the the first order
   var neworder = order1.slice(start, end);
