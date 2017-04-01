@@ -48,17 +48,21 @@ Week 2 - Genetic Algorithms (March 28/29)
 * Evolutionary Design
 * Evolutionary Ecosystem
 
-Week 3 - Classification and Prediction (April 4/5)
+Week 3 - Classification and Regression (April 4/5)
 -------------------------------
-  * KNN
-  * Linear Regression
+* What is Machine Learning
+* What is Supervised Learning
+* Classification and Regression
+* KNN
+* Linear Regression and Gradient Descent
 
 Week 4 - Neural Networks (April 11/12)
 ------------------------
 * Perceptron
 * MultiLayered Feedfoward
 * Backpropogation
-* Tools: Tensorflow
+* What is "Deep Learning"?
+* Overview of libraries and frameworks for Deep Learning
 
 Week 5 - Convolution Networks, Recurrent Networks (April 18/19)
 -----------------------------
