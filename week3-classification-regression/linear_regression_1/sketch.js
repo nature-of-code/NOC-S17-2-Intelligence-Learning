@@ -34,7 +34,7 @@ var maxY = 0;
 
 // Load the data
 function preload() {
-  data = loadJSON('data.json');
+  data = loadJSON('crickets.json');
 }
 
 // A function to calculate the "loss"

@@ -70,17 +70,13 @@ function setup() {
     // We can use either "euclidean" distance or "pearson" score
     getRecommendations('user', euclidean);
   });
-
-
-  //console.log(ratings);
-  //console.log(similarity('Lisa Rose', 'Gene Seymour'));
-  //console.log(pearson('Lisa Rose', 'Gene Seymour'));
-  //topMatches('Toby');
-  //getRecommendations('Toby');
 }
 
 // A function to get recommendations
 function getRecommendations(person, similarity) {
+
+  // Clear the div
+  select("#results").html('');
 
   // This will be the object to store recommendations
   var recommendations = {};
@@ -141,25 +137,5 @@ function getRecommendations(person, similarity) {
     var stars = recommendations[movie].ranking;
     var rec = createP(movie + ' ' + nf(stars,1,1) + '⭐');
     rec.parent('#results');
-  }
-}
-
-
-function topMatches(person, n) {
-  var people = Object.keys(ratings);
-  var scores = [];
-  for (var i = 0; i < people.length; i++) {
-    var other = people[i];
-    if (other != person) {
-      var sim = pearson(person, other);
-      scores.push({
-        name: other,
-        score: sim
-      });
-    }
-  }
-  scores.sort(byScore);
-  function byScore(a, b) {
-    return b.score - a.score;
   }
 }

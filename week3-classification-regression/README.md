@@ -27,7 +27,9 @@
 ## Some JavaScript Techniques
 * Objects as dictionaries (aka Hash Tables, aka Associate Arrays)
 * How to sort an array.
-* How to pass a function into a function
+* How to pass a function into a function.
+* Anonymous Functions
+* Chaining
 
 ## KNN
 
