@@ -1,6 +1,6 @@
 ## What is a "Machine Learning"? (From [Andrew Ng's Coursera Course](https://www.coursera.org/learn/machine-learning))
 * "Field of study that gives computers the ability to learn without being explicitly programmed." -- Arthur Samuels (1959). [Self-learning and checkers](https://en.wikipedia.org/wiki/Arthur_Samuel#Computer_checkers_.28draughts.29_development).
-* "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." -- Tom Mitchell (1998)
+* "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." -- Tom Mitchell (1998): [Maching Learning book](http://amzn.to/2nLdRgQ).
   * Example: classifying images of dogs and cats.
     * E = Watching you classify images as dogs or cats.
     * T = Classifying images as dogs or cats.
