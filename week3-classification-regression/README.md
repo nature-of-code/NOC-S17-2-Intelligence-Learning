@@ -16,10 +16,18 @@
 * Regression refers to predicting an "continuous" output (a fancy way of saying number). For example: "Given the number of bedrooms, what is the price of a house?" or "Given an input image of a cat, how much does the cat weigh?"
 
 ## Terminology
+* Euclidean distance
+* Pearson Correlation coefficient
+* Covariance
 * training set
 * learning algorithm
 * model
 * cost function
+
+## Some JavaScript Techniques
+* Objects as dictionaries (aka Hash Tables, aka Associate Arrays)
+* How to sort an array.
+* How to pass a function into a function
 
 ## KNN
 

@@ -1,4 +1,5 @@
 {
+    "info": "Data from https://github.com/arthur-e/Programming-Collective-Intelligence/blob/master/chapter2/recommendations.py",
     "movies": ["Lady in the Water", "Snakes on a Plane", "Just My Luck", "Superman Returns", "You, Me and Dupree", "The Night Listener"],
     "ratings": {
         "Lisa Rose": {
