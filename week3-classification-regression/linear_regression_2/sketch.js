@@ -2,11 +2,8 @@
 // Nature of Code: Intelligence and Learning
 // https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
-// Data set from
-// http://college.cengage.com/mathematics/brase/understandable_statistics/7e/students/datasets/slr/frames/slr02.html
-
 // The data we are loading
-var samples;
+var training;
 
 // What is the learning rate
 // This could change over time!
@@ -32,17 +29,17 @@ function calculateError() {
   // Start sum at 0
   var sum = 0;
   // For each sample
-  for (var i = 0; i < samples.length; i++) {
+  for (var i = 0; i < training.length; i++) {
     // This is the guess based on the line
-    var guess = m * samples[i].chirps + b;
+    var guess = m * training[i].x + b;
     // The error is the guess minus the actual temperature
-    var error = guess - samples[i].temp;
+    var error = guess - training[i].y;
     // Add up the error squared
     sum += error * error;
   }
 
-  // Divide by total samples to average
-  var avg = sum / samples.length;
+  // Divide by total data points to average
+  var avg = sum / training.length;
   return avg;
 }
 
@@ -52,13 +49,13 @@ function setup() {
   canvas.mousePressed(addPoints);
   lrSlider = select('#lrslider');
 
-
-  // Get the samples
-  samples = [];
+  // Data will be entered by user clicking
+  training = [];
 }
 
 function addPoints() {
-  samples.push(createVector(mouseX / width, mouseY / height));
+  // Add a data point
+  training.push(createVector(mouseX / width, mouseY / height));
 }
 
 function draw() {
@@ -73,11 +70,11 @@ function draw() {
   drawPoints();
   drawLine();
 
-  // if (samples.length > 0) {
-  //   // One sample at a time
+  // if (training.length > 0) {
+  //   // One data point at a time
   //   // Get the x and y values from the data
-  //   var x = samples[index].x;
-  //   var y = samples[index].y;
+  //   var x = training[index].x;
+  //   var y = training[index].y;
   //   // Make a prediction / guess
   //   var yguess = m * x + b;
   //
@@ -94,21 +91,21 @@ function draw() {
   //   index++;
   // }
   //
-  // // Finish all the samples
-  // if (index == samples.length) {
+  // // Finish all the training
+  // if (index == training.length) {
   //   index = 0;
   // }
 
-  // Do an entire run through all the samples
+  // Do an entire run through all the data
   var deltaB = 0;
   var deltaM = 0;
-  for (var i = 0; i < samples.length; i++) {
-    var x = samples[i].x;
-    var y = samples[i].y;
+  for (var i = 0; i < training.length; i++) {
+    var x = training[i].x;
+    var y = training[i].y;
     var yguess = m * x + b;
     var error = y - yguess;
-    deltaB += (2 / samples.length) * error;
-    deltaM += (2 / samples.length) * x * error;
+    deltaB += (2 / training.length) * error;
+    deltaM += (2 / training.length) * x * error;
   }
   b += (deltaB * learning_rate);
   m += (deltaM * learning_rate);
@@ -125,11 +122,11 @@ function drawLine() {
   line(x1 * width, y1 * height, x2 * width, y2 * height);
 }
 
-// Plot all the sample data
+// Plot all the training data
 function drawPoints() {
   stroke(0);
   fill(0);
-  for (var i = 0; i < samples.length; i++) {
-    ellipse(samples[i].x * width, samples[i].y * height, 4, 4);
+  for (var i = 0; i < training.length; i++) {
+    ellipse(training[i].x * width, training[i].y * height, 4, 4);
   }
 }

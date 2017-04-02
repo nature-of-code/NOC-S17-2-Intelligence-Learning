@@ -7,7 +7,7 @@
 
 // The data we are loading
 var data;
-var samples;
+var training;
 
 // What is the learning rate
 // This could change over time!
@@ -22,7 +22,7 @@ var m = 0;
 var iterations = 0;
 // How many iterations should we do total
 var totalIterations = 10;
-// Which sample are we on
+// Which data point are we on
 var index = 0;
 
 
@@ -42,33 +42,33 @@ function preload() {
 function calculateError() {
   // Start sum at 0
   var sum = 0;
-  // For each sample
-  for (var i = 0; i < samples.length; i++) {
+  // For each training data point
+  for (var i = 0; i < training.length; i++) {
     // This is the guess based on the line
-    var guess = m * samples[i].chirps + b;
+    var guess = m * training[i].chirps + b;
     // The error is the guess minus the actual temperature
-    var error = guess - samples[i].temp;
+    var error = guess - training[i].temp;
     // Add up the error squared
     sum += error * error;
   }
 
-  // Divide by total samples to average
-  var avg = sum / samples.length;
+  // Divide by total training to average
+  var avg = sum / training.length;
   return avg;
 }
 
 function setup() {
   createCanvas(600, 400);
 
-  // Get the samples
-  samples = data.samples;
+  // Get the training
+  training = data.samples;
 
   // Someday we might want to actually normalize all the data
   // So knowing the minimum and maximum value of each feature is useful
   // Here we are doing this just to graph the data in the pixel space
-  for (var i = 0; i < samples.length; i++) {
-    var x = samples[i].chirps;
-    var y = samples[i].temp;
+  for (var i = 0; i < training.length; i++) {
+    var x = training[i].chirps;
+    var y = training[i].temp;
     minX = min(x, minX);
     maxX = max(x, maxX);
     minY = min(y, minY);
@@ -88,10 +88,10 @@ function draw() {
   drawPoints();
   drawLine();
 
-  // One sample at a time
+  // One data point at a time
   // Get the x and y values from the data
-  var x = samples[index].chirps;
-  var y = samples[index].temp;
+  var x = training[index].chirps;
+  var y = training[index].temp;
   // Make a prediction / guess
   var yguess = m * x + b;
 
@@ -104,11 +104,11 @@ function draw() {
   b += deltaB;
   m += deltaM;
 
-  // Go to the next sample
+  // Go to the next data point
   index++;
 
-  // Finish all the samples
-  if (index == samples.length) {
+  // Finish all the training
+  if (index == training.length) {
     index = 0;
 
     // Finish the simulation
@@ -118,16 +118,16 @@ function draw() {
     }
   }
 
-  // Do an entire run through all the samples
+  // Do an entire run through all the training
   // var deltaB = 0;
   // var deltaM = 0;
-  // for (var i = 0; i < samples.length; i++) {
-  //   var x = samples[i].chirps;
-  //   var y = samples[i].temp;
+  // for (var i = 0; i < training.length; i++) {
+  //   var x = training[i].chirps;
+  //   var y = training[i].temp;
   //   var yguess = m * x + b;
   //   var error = y - yguess;
-  //   deltaB += (2 / samples.length) * error;
-  //   deltaM += (2 / samples.length) * x * error;
+  //   deltaB += (2 / training.length) * error;
+  //   deltaM += (2 / training.length) * x * error;
   // }
   // b += (deltaB * learning_rate);
   // m += (deltaM * learning_rate);
@@ -151,14 +151,14 @@ function drawLine() {
   line(x1, y1, x2, y2);
 }
 
-// Plot all the sample data
+// Plot all the data
 function drawPoints() {
   stroke(0);
   fill(0);
-  for (var i = 0; i < samples.length; i++) {
+  for (var i = 0; i < training.length; i++) {
     // Map points to pixel space
-    var x = map(samples[i].chirps, minX, maxX, 0, width);
-    var y = map(samples[i].temp, minY, maxY, height, 0);
+    var x = map(training[i].chirps, minX, maxX, 0, width);
+    var y = map(training[i].temp, minY, maxY, height, 0);
     ellipse(x, y, 4, 4);
   }
 }
