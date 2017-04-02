@@ -44,11 +44,33 @@ var data;
 
 var osc;
 
+var radio;
+
+
+
 function setup() {
   createCanvas(600, 600);
   osc = new p5.Oscillator();
   osc.setType('sine');
   osc.start();
+  osc.amp(0);
+
+  radio = createRadio();
+  radio.option('classification');
+  radio.option('regression');
+  radio.value('classification');
+
+  var playpause = createButton('play');
+  playpause.mousePressed(function() {
+    var amp = osc.amp();
+    if (amp.value == 0.5) {
+      osc.amp(0, 0.1);
+      playpause.html('play');
+    } else {
+      osc.amp(0.5, 0.1);
+      playpause.html('stop');
+    }
+  });
 }
 
 
@@ -60,44 +82,47 @@ function draw() {
 
 
   // Nearest Neighbor Classification!
+  if (radio.value() == 'classification') {
 
-  // Simple KNN algorithm with K = 1 for classification
-  var note = null;
-  var recordD = Infinity;
-  for (var i = 0; i < training.length; i++) {
-    var point = training[i];
-    // Euclidean distance to this neighbor
-    var d = dist(x, y, point.x, point.y);
-    if (d < recordD) {
-      note = point.note;
-      recordD = d;
+    // Simple KNN algorithm with K = 1 for classification
+    var note = null;
+    var recordD = Infinity;
+    for (var i = 0; i < training.length; i++) {
+      var point = training[i];
+      // Euclidean distance to this neighbor
+      var d = dist(x, y, point.x, point.y);
+      if (d < recordD) {
+        note = point.note;
+        recordD = d;
+      }
     }
+
+    var midi = cmajor[note];
+    var freq = translateMIDI(midi);
+    osc.freq(freq);
+
+  } else if (radio.value() == 'regression') {
+
+    // KNN regression! K is just everything weighted according to distance
+    var sumWeights = 0;
+    for (var i = 0; i < training.length; i++) {
+      var point = training[i];
+      var d = dist(x, y, point.x, point.y);
+      point.weight = 1 / (d * d);
+      sumWeights += point.weight;
+    }
+
+    var sum = 0;
+    for (var i = 0; i < training.length; i++) {
+      var point = training[i];
+      var note = cmajor[point.note];
+      var freq = translateMIDI(note);
+      sum += freq * point.weight;
+    }
+
+    var freq = sum / sumWeights;
+    osc.freq(freq);
   }
-
-  var midi = cmajor[note];
-  var freq = translateMIDI(midi);
-  osc.freq(freq);
-
-  // KNN regression! K is just everything weighted according to distance
-  // var sumWeights = 0;
-  // for (var i = 0; i < training.length; i++) {
-  //   var point = training[i];
-  //   var d = dist(x, y, point.x, point.y);
-  //   point.weight = 1 / (d*d);
-  //   sumWeights += point.weight;
-  // }
-  //
-  // var sum = 0;
-  // for (var i = 0; i < training.length; i++) {
-  //   var point = training[i];
-  //   var note = cmajor[point.note];
-  //   var freq = translateMIDI(note);
-  //   sum += freq * point.weight;
-  // }
-  //
-  // var freq = sum / sumWeights;
-  // osc.freq(freq);
-
 
 
   // Now draw all the training data to see how it looks
