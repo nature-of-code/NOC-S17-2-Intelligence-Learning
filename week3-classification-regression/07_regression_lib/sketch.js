@@ -10,7 +10,7 @@ var data = [];
 var reg;
 // do the regression (polynomial to the third degree)
 function setup() {
-  var canvas = createCanvas(200, 200);
+  var canvas = createCanvas(600, 200);
   canvas.parent('canvascontainer');
   canvas.mousePressed(addPoint);
 }
