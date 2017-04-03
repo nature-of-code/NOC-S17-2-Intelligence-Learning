@@ -16,13 +16,13 @@
 * Regression refers to predicting an "continuous" output (a fancy way of saying number). For example: "Given the number of bedrooms, what is the price of a house?" or "Given an input image of a cat, how much does the cat weigh?"
 
 ## Terminology
-* Euclidean distance
-* Pearson Correlation coefficient
-* Covariance
-* training set
-* learning algorithm
-* model
-* cost function
+* [Euclidean distance](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Mathematics#euclidean-distance)
+* [Covariance](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Statistics#covariance)
+* [Pearson Correlation coefficient](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Statistics#correlation)
+* [Training set](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Machine-Learning#training-set)
+* [Learning algorithm](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Machine-Learning#algorithms)
+* [Model](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Machine-Learning#models)
+* [Cost function](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Machine-Learning#loss-function)
 
 ## Some JavaScript Techniques
 * Objects as dictionaries (aka Hash Tables, aka Associate Arrays)
