@@ -50,6 +50,8 @@ Week 2 - Genetic Algorithms (March 28/29)
 
 Week 3 - Classification and Regression (April 4/5)
 -------------------------------
+* [Week 3 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week3-classification-regression/README.md)
+* [Week 3 Homework](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Homework-3)
 * What is Machine Learning
 * What is Supervised Learning
 * Classification and Regression
