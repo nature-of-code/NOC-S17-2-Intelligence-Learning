@@ -1,5 +1,5 @@
 # Import Flask:
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 # Initialize Flask app:
 app = Flask(__name__)
@@ -10,13 +10,13 @@ app = Flask(__name__)
 def index():
     return jsonify('hello')
 
-# Define form submission route:
-@app.route('/test', methods=['GET'])
+@app.route('/test')
 def test():
-    # Get user's name from submitted form data:
-    
-    # Render hello page (with variables injected):
-    return jsonify(request);
+    name = request.args.get('name')
+    if name is None:
+        return 'no name';
+    else:
+        return 'name: ' + name;
 
 # Run app:
 if __name__ == '__main__':

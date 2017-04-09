@@ -40,5 +40,6 @@
 * multi-layered perceptron
 * backpropagation
 * sigmoid
+* deep learning
 
 ## Exercise ideas
