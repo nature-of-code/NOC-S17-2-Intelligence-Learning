@@ -1,34 +1,26 @@
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
 
-// Arriving "vehicle" follows the mouse position
-
-// Implements Craig Reynold's autonomous steering behaviors
-// One vehicle "arrive"
-// See: http://www.red3d.com/cwr/
-
-var v;
+var input;
+var submitButton;
 
 function setup() {
-  createCanvas(640,360);
-  v = new Vehicle(width/2, height/2);
+  createCanvas(200,200);
+  background(51);
+  input = createInput('enter your name');
+  var submitButton = createButton('submit');
+  submitButton.mousePressed(submit);
+
+  function submit() {
+    var name = input.value();
+    loadJSON('/test?name=' + name, gotData);
+  }
 }
 
-function draw() {
-  background(51);
-
-  var mouse = createVector(mouseX, mouseY);
-
-  // Draw an ellipse at the mouse position
-  fill(127);
-  stroke(200);
-  strokeWeight(2);
-  ellipse(mouse.x, mouse.y, 48, 48);
-
-  // Call the appropriate steering behaviors for our agents
-  v.arrive(mouse);
-  v.update();
-  v.display();
-
+function gotData(data) {
+  console.log(data);
+  var name = data.name;
+  var x = random(width);
+  var y = random(height);
+  fill(255);
+  noStroke();
+  text(name, x, y);
 }
