@@ -27,8 +27,7 @@
 
 ## Additional Reading
 * [Make Your Own Neural Network](http://amzn.to/2pgOaT9) by Tariq Rashid
-* [Chapter 22 of The Computational Beauty of Nature](http://amzn.to/2oUYCjT)
-
+* [Chapter 22 of The Computational Beauty of Nature](http://amzn.to/2oUYCjT) by Gary Flake
 
 ## Terminology
 * complex adaptive system
