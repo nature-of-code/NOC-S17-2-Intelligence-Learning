@@ -1,14 +1,17 @@
 # Neural Networks
 
-## p5.js Code examples
+## p5.js examples
 * [Simple Perceptron ](https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js/tree/master/chp10_nn/NOC_10_01_Perceptron)
 * [Three Layer Neural Network learning digits Perceptron](https://github.com/shiffman/Neural-Network-p5)
 * [Animated Network Visualization](https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js/tree/master/chp10_nn/NOC_10_04_NetworkAnimation)
 
-## Additional examples
+## Additional Processing examples
 * [Nature of Code Chapter 10 Processing examples](https://github.com/shiffman/The-Nature-of-Code-Examples/tree/master/chp10_nn)
 * [Charles Fried's Neural Network in Processing](https://github.com/CharlesFr/ANN_Tutorial)
-* []()
+
+## Python examples
+* [Make Your Own Neural Network ](https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork/) from Tariq Rashid
+* [Abishek's Tensorflow Example](https://github.com/shekit/machine-learning-demystified/blob/master/week2/NeuralNet.ipynb)
 
 ## History
 * In 1943, Warren S. McCulloch, a neuroscientist, and Walter Pitts, a logician, developed the first conceptual model of an artificial neural network. In their paper, "[A logical calculus of the ideas immanent in nervous activity](https://pdfs.semanticscholar.org/5272/8a99829792c3272043842455f3a110e841b1.pdf),” they describe the concept of a neuron, a single cell living in a network of cells that receives inputs, processes those inputs, and generates an output.
