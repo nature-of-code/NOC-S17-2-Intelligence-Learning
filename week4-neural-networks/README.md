@@ -23,6 +23,7 @@
 * [Rolf van Gelder's Neural Network in Processing](http://cagewebdev.com/wp-content/uploads/2017/01/Neural-Networks-for-Dummies.pdf)
 * [Linear Algebra Cheatsheet](https://medium.com/towards-data-science/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c) by Brendan Fortuner
 * [A Step by Step Backpropagation Example](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) by Matt Mazur
+* [A 'Brief' History of Neural Nets and Deep Learning](http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/) by Andrey Kurenkov
 
 ## Additional Reading
 * [Make Your Own Neural Network](http://amzn.to/2pgOaT9) by Tariq Rashid
