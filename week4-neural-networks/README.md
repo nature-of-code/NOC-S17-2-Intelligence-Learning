@@ -2,7 +2,7 @@
 
 ## p5.js examples
 * [Simple Perceptron ](https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js/tree/master/chp10_nn/NOC_10_01_Perceptron)
-* [Three Layer Neural Network learning digits Perceptron](https://github.com/shiffman/Neural-Network-p5)
+* [Fully Connected Neural Network (one hidden layer) learning MNIST digits](https://github.com/shiffman/Neural-Network-p5)
 * [Animated Network Visualization](https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js/tree/master/chp10_nn/NOC_10_04_NetworkAnimation)
 
 ## Additional Processing examples
@@ -16,6 +16,9 @@
 ## History
 * In 1943, Warren S. McCulloch, a neuroscientist, and Walter Pitts, a logician, developed the first conceptual model of an artificial neural network. In their paper, "[A logical calculus of the ideas immanent in nervous activity](https://pdfs.semanticscholar.org/5272/8a99829792c3272043842455f3a110e841b1.pdf),” they describe the concept of a neuron, a single cell living in a network of cells that receives inputs, processes those inputs, and generates an output.
 * Invented in 1957 by Frank Rosenblatt at the Cornell Aeronautical Laboratory ([original paper](http://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf)), a perceptron is the simplest neural network possible: a computational model of a single neuron. A perceptron consists of one or more inputs, a processor, and a single output.
+* In 1969, in their book [Perceptrons](https://mitpress.mit.edu/books/perceptrons) Marvin Minksy and Seymour Papert demonstrate the limitations of perceptrons to solve only "linearly separable" problems.
+* Next up --> hidden layers and back propagation!
+* Next up --> Deep Learning!
 
 ## Online Reading
 * [Neural Networks (Nature of Code Chapter 10)](http://natureofcode.com/book/chapter-10-neural-networks/)
@@ -37,3 +40,5 @@
 * multi-layered perceptron
 * backpropagation
 * sigmoid
+
+## Exercise ideas
