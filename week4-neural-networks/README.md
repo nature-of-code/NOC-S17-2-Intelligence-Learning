@@ -56,6 +56,7 @@ This short list thanks to Andrey Kurenkov's excellent ['Brief' History of Neural
 * back-propagation
 * sigmoid
 * gradient descent
+* epoch
 * deep learning
 
 ## Exercise ideas
