@@ -52,8 +52,15 @@ This short list thanks to Andrey Kurenkov's excellent ['Brief' History of Neural
 * activation function
 * weight
 * multi-layered perceptron
-* backpropagation
+* input layer, hidden layer, output layer
+* back-propagation
 * sigmoid
+* gradient descent
 * deep learning
 
 ## Exercise ideas
+* Instead of using the supervised learning for any of the above examples, can you train a neural network to find the right weights by using a genetic algorithm?
+* Visualize a neural network itself. You could start with just the simple perceptron or just go for drawing all the layers of the MNIST training example. How can you show the flow of information using color, geometry, etc.?
+* Add a feature that allows the MNIST example to save and reload a model.
+* Add a feature that allows users to add digits to the training or test set.
+* Try the 3 layer network with your own data.
