@@ -8,17 +8,23 @@
 ## Additional Processing examples
 * [Nature of Code Chapter 10 Processing examples](https://github.com/shiffman/The-Nature-of-Code-Examples/tree/master/chp10_nn)
 * [Charles Fried's Neural Network in Processing](https://github.com/CharlesFr/ANN_Tutorial)
+* [Another Processing Example](https://github.com/ANyanCatFan/SimpleNN)
 
 ## Python examples
+* [Simple Flash Server + p5]()
 * [Make Your Own Neural Network ](https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork/) from Tariq Rashid
 * [Abishek's Tensorflow Example](https://github.com/shekit/machine-learning-demystified/blob/master/week2/NeuralNet.ipynb)
+* [How to freeze a model and serve it with a python API](https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc)
 
 ## History
+This short list thanks to Andrey Kurenkov's excellent ['Brief' History of Neural Nets and Deep Learning](http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/)
 * In 1943, Warren S. McCulloch, a neuroscientist, and Walter Pitts, a logician, developed the first conceptual model of an artificial neural network. In their paper, "[A logical calculus of the ideas immanent in nervous activity](https://pdfs.semanticscholar.org/5272/8a99829792c3272043842455f3a110e841b1.pdf),” they describe the concept of a neuron, a single cell living in a network of cells that receives inputs, processes those inputs, and generates an output.
+* Hebb's Rule from [The Organization of Behavior: A Neuropsychological Theory](https://alexa.design/2nyUyJi): "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A's efficiency, as one of the cells firing B, is increased."
 * Invented in 1957 by Frank Rosenblatt at the Cornell Aeronautical Laboratory ([original paper](http://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf)), a perceptron is the simplest neural network possible: a computational model of a single neuron. A perceptron consists of one or more inputs, a processor, and a single output.
-* In 1969, in their book [Perceptrons](https://mitpress.mit.edu/books/perceptrons) Marvin Minksy and Seymour Papert demonstrate the limitations of perceptrons to solve only "linearly separable" problems.
-* Next up --> hidden layers and back propagation!
-* Next up --> Deep Learning!
+* In 1969, in their book [Perceptrons](https://mitpress.mit.edu/books/perceptrons) Marvin Minksy and Seymour Papert demonstrate the limitations of perceptrons to solve only "linearly separable" problems.  AI Winter #1!
+* Paul Werbos's 1974 thesis [Beyond Regression: New Tools for Prediction and Analysis in the Behavioral Sciences](https://books.google.com/books/about/Beyond_Regression.html?id=z81XmgEACAAJ) proposes "backpropagation" as a solution to adjusting weights in the hidden layers of a neural network. The technique was popularized in the 1986 paper [Learning representations by back-propagating errors](http://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf) by David Rumelhart, Geoffrey Hinton, and Ronald Williams
+* Neural Networks come back with Yann LeCunn's paper [Backpropagation Applied to Handwritten Zip Code Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-89e.pdf). Here's a [1993 video on convolutional neural networks](https://youtu.be/FwFduRA_L6Q). But AI Winter returns again with the "[vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem)."
+* "Deep Learning" thaws the wintr with new methodologies for training: [A fast learning algorithm for deep belief nets ](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf) by Hinton, Osindero, Teh and raw power with GPUs: [Large-scale Deep Unsupervised Learning using Graphics Processors](http://www.machinelearning.org/archive/icml2009/papers/218.pdf)
 
 ## Online Reading
 * [Neural Networks (Nature of Code Chapter 10)](http://natureofcode.com/book/chapter-10-neural-networks/)
@@ -31,6 +37,14 @@
 ## Additional Reading
 * [Make Your Own Neural Network](http://amzn.to/2pgOaT9) by Tariq Rashid
 * [Chapter 22 of The Computational Beauty of Nature](http://amzn.to/2oUYCjT) by Gary Flake
+
+## Linear Algebra Review
+* Vectors vs. Matrices
+* "Elementwise" operations
+* Matrix multiplication
+* Transpose
+* inputs and outputs
+* weights
 
 ## Terminology
 * complex adaptive system
