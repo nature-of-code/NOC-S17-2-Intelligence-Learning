@@ -60,6 +60,7 @@ This short list thanks to Andrey Kurenkov's excellent ['Brief' History of Neural
 * deep learning
 
 ## Exercise ideas
+* Redo the three layer network example using an existing matrix library like [math.js](http://mathjs.org/).
 * Instead of using the supervised learning for any of the above examples, can you train a neural network to find the right weights by using a genetic algorithm?
 * Visualize a neural network itself. You could start with just the simple perceptron or just go for drawing all the layers of the MNIST training example. How can you show the flow of information using color, geometry, etc.?
 * Add a feature that allows the MNIST example to save and reload a model.
