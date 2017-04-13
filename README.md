@@ -60,9 +60,12 @@ Week 3 - Classification and Regression (April 4/5)
 
 Week 4 - Neural Networks (April 11/12)
 ------------------------
+* [Week 4 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week4-neural-networks/README.md)
 * Perceptron
-* MultiLayered Feedfoward
+* Multi-Layered Perceptron
+* inputs and outputs
 * Backpropogation
+* Training vs. Testing (MNIST data set)
 * What is "Deep Learning"?
 * Overview of libraries and frameworks for Deep Learning
 
