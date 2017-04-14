@@ -10,7 +10,6 @@ function setup() {
 
   var base64 = img.canvas.toDataURL();
   base64 = base64.replace('data:image/png;base64,','');
-  console.log(base64);
 
   var data = {
     img: base64
