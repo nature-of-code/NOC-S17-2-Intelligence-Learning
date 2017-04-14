@@ -1,26 +1,30 @@
+var img;
 
-var input;
-var submitButton;
-
-function setup() {
-  createCanvas(200,200);
-  background(51);
-  input = createInput('enter your name');
-  var submitButton = createButton('submit');
-  submitButton.mousePressed(submit);
-
-  function submit() {
-    var name = input.value();
-    loadJSON('/test?name=' + name, gotData);
-  }
+function preload() {
+  img = loadImage('zero.png');
 }
 
-function gotData(data) {
-  console.log(data);
-  var name = data.name;
-  var x = random(width);
-  var y = random(height);
-  fill(255);
-  noStroke();
-  text(name, x, y);
+function setup() {
+  createCanvas(200, 200);
+  image(img, 0, 0, width, height);
+
+  var base64 = img.canvas.toDataURL();
+  base64 = base64.replace('data:image/png;base64,','');
+  console.log(base64);
+
+  var data = {
+    img: base64
+  }
+  httpPost('/upload', data, success, error);
+
+  function success(reply) {
+    console.log('success');
+    console.log(reply);
+  }
+
+  function error(reply) {
+    console.log('error');
+    console.log(reply);
+  }
+
 }
