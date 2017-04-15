@@ -35,30 +35,17 @@ def static_proxy(path):
 ## Also now a post request to receive a file
 @app.route('/upload', methods=['POST'])
 def upload():
-    # try:
-        data = request.form['img']
-        img = Image.open(BytesIO(base64.b64decode(data)))
-        img = imresize(img, (28,28,3))
-        gray = four2one(img)
-        gray /= 255
-        print(gray[0])
-        inputs = gray.reshape(1, 28, 28, 1)
-        print(inputs.shape)
-        prediction = model.predict(inputs,batch_size=1, verbose=0)
-        print(prediction)
-        return jsonify(status='got image',prediction=prediction.tolist());
-    # except Exception as err:
-    #     print(err);
-    #     return jsonify(status='something went wrong');
+    data = request.form['img']
+    img = Image.open(BytesIO(base64.b64decode(data)))
+    img = imresize(img, (28,28,3))
+    gray = four2one(img)
+    gray /= 255
+    inputs = gray.reshape(1, 28, 28, 1)
+    prediction = model.predict(inputs);
+    label = model.predict_classes(inputs)
+    print(prediction)
+    return jsonify(status='got image',number=label.tolist()[0],prediction=prediction.tolist()[0]);
 
-@app.route('/test')
-def test():
-    name = request.args.get('name')
-    if name is None:
-        return jsonify(status='no name');
-    else:
-        return jsonify(status='name',
-                   name=name)
 # Run app:
 if __name__ == '__main__':
 #    app.run( host='0.0.0.0', port=8080, debug=True )
