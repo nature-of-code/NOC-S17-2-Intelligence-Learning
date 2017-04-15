@@ -12,9 +12,6 @@ import base64
 import keras
 from keras.models import load_model
 
-def four2one(rgb):
-    return np.dot(rgb[...,:4], [0.333, 0.333, 0.333,0])
-
 # Setup Flask app.
 app = Flask(__name__)
 app.debug = True
@@ -43,7 +40,6 @@ def upload():
     inputs = gray.reshape(1, 28, 28, 1)
     prediction = model.predict(inputs);
     label = model.predict_classes(inputs)
-    print(prediction)
     return jsonify(status='got image',number=label.tolist()[0],prediction=prediction.tolist()[0]);
 
 # Run app:
