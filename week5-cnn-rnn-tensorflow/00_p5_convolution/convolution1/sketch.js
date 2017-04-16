@@ -63,12 +63,6 @@ function draw() {
   img.loadPixels();
   // Begin our loop for every pixel
 
-  var skip = 1;
-  if (maxpooling) {
-    skip = 10;
-  }
-
-
   for (var x = 0; x < dest.width; x++) {
     for (var y = 0; y < dest.height; y++) {
       // Each pixel location (x,y) gets passed into a function called convolution()
@@ -86,7 +80,7 @@ function draw() {
 
   image(dest, xstart, ystart);
   if (maxpooling.checked()) {
-    maxpool(dest, 10, xstart, ystart);
+    maxpool(dest, 5, xstart, ystart);
   }
   stroke(0);
   noFill();

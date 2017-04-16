@@ -1,0 +1,345 @@
+THESEUS, Duke of Athens.
+EGEUS, Father to Hermia.
+LYSANDER, in love with Hermia.
+DEMETRIUS, in love with Hermia.
+PHILOSTRATE, Master of the Revels to Theseus.
+QUINCE, the Carpenter.
+SNUG, the Joiner.
+BOTTOM, the Weaver.
+FLUTE, the Bellows-mender.
+SNOUT, the Tinker.
+STARVELING, the Tailor.
+HIPPOLYTA, Queen of the Amazons, bethrothed to Theseus.
+HERMIA, daughter to Egeus, in love with Lysander.
+HELENA, in love with Demetrius.
+OBERON, King of the Fairies.
+TITANIA, Queen of the Fairies.
+PUCK, or ROBIN GOODFELLOW, a Fairy.
+PEASBLOSSOM, Fairy.
+COBWEB, Fairy.
+MOTH, Fairy.
+MUSTARDSEED, Fairy.
+PYRAMUS, THISBE, WALL, MOONSHINE, LION } Characters in the Interlude performed by the Clowns.
+KING OF FRANCE
+THE DUKE OF FLORENCE
+BERTRAM, Count of Rousillon
+LAFEU, an old lord
+PAROLLES, a follower of Bertram
+TWO FRENCH LORDS, serving with Bertram
+STEWARD, Servant to the Countess of Rousillon
+LAVACHE, a clown and Servant to the Countess of Rousillon
+A PAGE, Servant to the Countess of Rousillon
+COUNTESS OF ROUSILLON, mother to Bertram
+HELENA, a gentlewoman protected by the Countess
+A WIDOW OF FLORENCE.
+DIANA, daughter to the Widow
+VIOLENTA, neighbour and friend to the Widow
+MARIANA, neighbour and friend to the Widow
+MARK ANTONY,         Triumvirs
+OCTAVIUS CAESAR, Triumvirs
+M. AEMILIUS LEPIDUS, Triumvirs
+SEXTUS POMPEIUS, Triumvirs
+DOMITIUS ENOBARBUS, friend to Antony
+VENTIDIUS, friend to Antony
+EROS, friend to Antony
+SCARUS, friend to Antony
+DERCETAS, friend to Antony
+DEMETRIUS, friend to Antony
+PHILO, friend to Antony
+MAECENAS, friend to Caesar
+AGRIPPA, friend to Caesar
+DOLABELLA, friend to Caesar
+PROCULEIUS, friend to Caesar
+THYREUS, friend to Caesar
+GALLUS, friend to Caesar
+MENAS, friend to Pompey
+MENECRATES, friend to Pompey
+VARRIUS, friend to Pompey
+TAURUS, Lieutenant-General to Caesar
+CANIDIUS, Lieutenant-General to Antony
+SILIUS, an Officer in Ventidius's army
+EUPHRONIUS, an Ambassador from Antony to Caesar
+ALEXAS,   attendant on Cleopatra
+MARDIAN,
+SELEUCUS,
+DIOMEDES,
+A SOOTHSAYER
+A CLOWN
+CLEOPATRA, Queen of Egypt
+OCTAVIA, sister to Caesar and wife to Antony
+CHARMIAN, lady attending on Cleopatra
+IRAS,
+DUKE, living in exile
+FREDERICK, his brother, and usurper of his dominions
+AMIENS, lord attending on the banished Duke
+JAQUES, lord attending on the banished Duke
+LE BEAU, a courtier attending upon Frederick
+CHARLES, wrestler to Frederick
+OLIVER, son of Sir Rowland de Boys
+JAQUES, son of Sir Rowland de Boys
+ORLANDO, son of Sir Rowland de Boys
+ADAM, servant to Oliver
+DENNIS, servant to Oliver
+TOUCHSTONE, the court jester
+SIR OLIVER MARTEXT, a vicar
+CORIN, shepherd
+SILVIUS, shepherd
+WILLIAM, a country fellow, in love with Audrey
+ROSALIND, daughter to the banished Duke
+CELIA, daughter to Frederick
+PHEBE, a shepherdes
+AUDREY, a country wench
+CAIUS MARCIUS, afterwards CAIUS MARCIUS CORIOLANUS
+TITUS LARTIUS
+COMINIUS
+MENENIUS AGRIPPA, friend to Coriolanus
+SICINIUS VELUTUS
+JUNIUS BRUTUS
+YOUNG MARCIUS, son to Coriolanus
+A ROMAN HERALD
+NICANOR, a Roman
+TULLUS AUFIDIUS, General of the Volscians
+LIEUTENANT, to Aufidius
+CONSPIRATORS, With Aufidius
+ADRIAN, a Volscian
+A CITIZEN of Antium
+TWO VOLSCIAN GUARDS
+VOLUMNIA, mother to Coriolanus
+VIRGILIA, wife to Coriolanus
+VALERIA, friend to Virgilia
+GENTLEWOMAN attending on Virgilia
+CYMBELINE, King of Britain
+CLOTEN, son to the Queen by a former husband
+POSTHUMUS LEONATUS, a gentleman, husband to Imogen
+BELARIUS, a banished lord, disguised under the name of Morgan
+GUIDERIUS and ARVIRAGUS, sons to Cymbeline, disguised under the names of POLYDORE and CADWAL, supposed sons to Belarius
+PHILARIO, Italian, friend to Posthumus
+IACHIMO,  Italian, friend to Philario
+A FRENCH GENTLEMAN, friend to Philario
+CAIUS LUCIUS, General of the Roman Forces
+A ROMAN CAPTAIN
+TWO BRITISH CAPTAINS
+PISANIO, servant to Posthumus
+CORNELIUS, a physician
+TWO LORDS of Cymbeline's court
+TWO GENTLEMEN of the same
+TWO GAOLERS
+QUEEN, wife to Cymbeline
+IMOGEN, daughter to Cymbeline by a former queen
+HELEN, a lady attending on Imogen
+Claudius, King of Denmark.
+Marcellus, Officer.
+Hamlet, son to the former, and nephew to the present king.
+Polonius, Lord Chamberlain.
+Horatio, friend to Hamlet.
+Laertes, son to Polonius.
+Voltemand, courtier.
+Cornelius, courtier.
+Rosencrantz, courtier.
+Guildenstern, courtier.
+Osric, courtier.
+A Gentleman, courtier.
+A Priest.
+Marcellus, officer.
+Bernardo, officer.
+Francisco, a soldier
+Reynaldo, servant to Polonius.
+Players.
+Two Clowns, gravediggers.
+Fortinbras, Prince of Norway.
+A Norwegian Captain.
+English Ambassadors.
+Getrude, Queen of Denmark, mother to Hamlet.
+Ophelia, daughter to Polonius.
+Ghost of Hamlet's Father.
+KING HENRY THE EIGHTH
+CARDINAL WOLSEY
+CARDINAL CAMPEIUS
+CAPUCIUS, Ambassador from the Emperor Charles V
+CRANMER, ARCHBISHOP OF CANTERBURY
+DUKE OF NORFOLK
+DUKE OF BUCKINGHAM
+DUKE OF SUFFOLK
+EARL OF SURREY
+LORD CHAMBERLAIN
+LORD CHANCELLOR
+GARDINER, BISHOP OF WINCHESTER
+BISHOP OF LINCOLN
+LORD ABERGAVENNY
+LORD SANDYS
+SIR HENRY GUILDFORD
+SIR THOMAS LOVELL
+SIR ANTHONY DENNY
+SIR NICHOLAS VAUX
+SECRETARIES to Wolsey
+CROMWELL, servant to Wolsey
+GRIFFITH, gentleman-usher to Queen Katharine
+THREE GENTLEMEN
+DOCTOR BUTTS, physician to the King
+GARTER KING-AT-ARMS
+SURVEYOR to the Duke of Buckingham
+BRANDON, and a SERGEANT-AT-ARMS
+DOORKEEPER Of the Council chamber
+PORTER, and his MAN
+PAGE to Gardiner
+A CRIER
+QUEEN KATHARINE, wife to King Henry, afterwards divorced
+ANNE BULLEN, her Maid of Honour, afterwards Queen
+AN OLD LADY, friend to Anne Bullen
+PATIENCE, woman to Queen Katharine
+Lear, King of Britain.
+King of France.
+Duke of Burgundy.
+Duke of Cornwall.
+Duke of Albany.
+Earl of Kent.
+Earl of Gloucester.
+Edgar, son of Gloucester.
+Edmund, bastard son to Gloucester.
+Curan, a courtier.
+Old Man, tenant to Gloucester.
+Doctor.
+Lear's Fool.
+Oswald, steward to Goneril.
+A Captain under Edmund's command.
+Gentlemen.
+A Herald.
+Servants to Cornwall.
+Goneril, daughter to Lear.
+Regan, daughter to Lear.
+Cordelia, daughter to Lear.
+DUNCAN, King of Scotland
+MACBETH, Thane of Glamis and Cawdor, a general in the King's army
+LADY MACBETH, his wife
+MACDUFF, Thane of Fife, a nobleman of Scotland
+LADY MACDUFF, his wife
+MALCOLM, elder son of Duncan
+DONALBAIN, younger son of Duncan
+BANQUO, Thane of Lochaber, a general in the King's army
+FLEANCE, his son
+LENNOX, nobleman of Scotland
+ROSS, nobleman of Scotland
+MENTEITH nobleman of Scotland
+ANGUS, nobleman of Scotland
+CAITHNESS, nobleman of Scotland
+SIWARD, Earl of Northumberland, general of the English forces
+YOUNG SIWARD, his son
+SEYTON, attendant to Macbeth
+HECATE, Queen of the Witches
+The Three Witches
+Boy, Son of Macduff
+Gentlewoman attending on Lady Macbeth
+An English Doctor
+A Scottish Doctor
+A Sergeant
+A Porter
+An Old Man
+The Ghost of Banquo and other Apparitions
+Lords, Gentlemen, Officers, Soldiers, Murtherers, Attendants, and Messengers
+VINCENTIO, the Duke
+ANGELO, the Deputy
+ESCALUS, an ancient Lord
+CLAUDIO, a young gentleman
+LUCIO, a fantastic
+Two other like Gentlemen
+VARRIUS, a gentleman, servant to the Duke
+PROVOST
+THOMAS, friar
+PETER, friar
+A JUSTICE
+ELBOW, a simple constable
+FROTH, a foolish gentleman
+POMPEY, a clown and servant to Mistress Overdone
+ABHORSON, an executioner
+BARNARDINE, a dissolute prisoner
+ISABELLA, sister to Claudio
+MARIANA, betrothed to Angelo
+JULIET, beloved of Claudio
+FRANCISCA, a nun
+MISTRESS OVERDONE, a bawd
+Lords, Officers, Citizens, Boy, and Attendants
+SIR JOHN FALSTAFF
+FENTON, a young gentleman
+SHALLOW, a country justice
+SLENDER, cousin to Shallow
+FORD
+PAGE
+WILLIAM PAGE, a boy, son to Page
+SIR HUGH EVANS, a Welsh parson
+DOCTOR CAIUS, a French physician
+HOST of the Garter Inn
+BARDOLPH
+PISTOL
+NYM
+ROBIN, page to Falstaff
+SIMPLE, servant to Slender
+RUGBY, servant to Doctor Caius
+MISTRESS FORD
+MISTRESS PAGE
+MISTRESS ANNE PAGE, her daughter
+MISTRESS QUICKLY, servant to Doctor Caius
+SERVANTS to Page, Ford, etc.
+OTHELLO, the Moor, general of the Venetian forces
+DESDEMONA, his wife
+IAGO, ensign to Othello
+EMILIA, his wife, lady-in-waiting to Desdemona
+CASSIO, lieutenant to Othello
+THE DUKE OF VENICE
+BRABANTIO, Venetian Senator, father of Desdemona
+GRATIANO, nobleman of Venice, brother of Brabantio
+LODOVICO, nobleman of Venice, kinsman of Brabantio
+RODERIGO, rejected suitor of Desdemona
+BIANCA, mistress of Cassio
+MONTANO, a Cypriot official
+A Clown in service to Othello
+ALONSO, King of Naples
+SEBASTIAN, his brother
+PROSPERO, the right Duke of Milan
+ANTONIO, his brother, the usurping Duke of Milan
+FERDINAND, son to the King of Naples
+GONZALO, an honest old counsellor
+ADRIAN
+FRANCISCO
+CALIBAN, a savage and deformed slave
+TRINCULO, a jester
+STEPHANO, a drunken butler
+MASTER OF A SHIP
+BOATSWAIN
+MARINERS
+MIRANDA, daughter to Prospero
+ARIEL, an airy spirit
+IRIS
+CERES
+JUNO
+NYMPHS
+REAPERS
+Other Spirits attending on Prospero
+TIMON of Athens
+LUCIUS
+LUCULLUS
+SEMPRONIUS, flattering lords
+VENTIDIUS, one of Timon's false friends
+ALCIBIADES, an Athenian captain
+APEMANTUS, a churlish philosopher
+FLAVIUS, steward to Timon
+FLAMINIUS
+LUCILIUS
+SERVILIUS, Timon's servants
+CAPHIS
+PHILOTUS
+TITUS
+HORTENSIUS, servants to Timon's creditors
+POET
+PAINTER
+JEWELLER
+MERCHANT
+MERCER
+AN OLD ATHENIAN
+THREE STRANGERS
+A PAGE
+A FOOL
+PHRYNIA
+TIMANDRA, mistresses to Alcibiades
+CUPID
+AMAZONS in the Masque
+Lords, Senators, Officers, Soldiers, Servants, Thieves, and Attendants
