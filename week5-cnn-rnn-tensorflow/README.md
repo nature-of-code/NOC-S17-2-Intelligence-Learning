@@ -4,6 +4,7 @@
 * [An Intuitive Explanation of Convolutional Neural Networks](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) by Ujjwal Karn
 * [Original 1998 "LetNet5" paper: "Gradient-Based Learning Applied to Document Recognition"](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by Y. Lecun, L. Bottou, Y. Bengio, P. Haffner
 * [Online 3D Visualization of a Convolutional Network trained on MNIST](http://scs.ryerson.ca/~aharley/vis/conv/flat.html) by Adam Harley.
+* [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU&feature=youtu.be), video tutorial by Luis Serrano
 * Steps
   1. Convolution, see: [Convolution Matrix](https://docs.gimp.org/en/plug-in-convmatrix.html) from GIMP documentation.
   2. ReLU (aka "Rectified Linear Unit"): A non-linear activation function that turns all negative values into zero.
