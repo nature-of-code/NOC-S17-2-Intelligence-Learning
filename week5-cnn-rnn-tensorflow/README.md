@@ -15,11 +15,15 @@
   * feature map
   * equivarient: refers to the scale independent nature of the features, allowing objects to be detected in the image at any size / location.
   * [softmax](http://cs231n.github.io/linear-classify/#softmax): an activation function for the final output layer that squashes all values to between 0 and 1 (and adding up to 1). This is perfect for probabilistic outputs like image classifcation.
+  * [one-hot encoding](https://en.wikipedia.org/wiki/One-hot): This is a technique that stores categorical features for classification in binary format. For example, cat: `001`, dog: `010`, turtle: `100`.
+  * [loss](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Glossary:-Machine-learning#loss-function): A loss (or cost) function (also known as a cost function) quantifies how the performance of a model on the training set. For example "mean squared error" sums the squared differences between predicted and actual values. See below for loss functions available in keras.
 
 ## CNN Parameters
 * filter size
 * depth: number of filters per convolution layer
 * stride: number of pixels the filter "sliders over" (i.e. are any pixels skipped to reduce)
+* dropout: a technique to help prevent overfitting: randomly sets some input units to 0 (effectively ignoring them) during each training step.
+* flatten: refers to taking a multi-dimensional output and "flattening" it into one dimension. For example, a 2D matrix of pixels converted into a 1D array of pixels.
 
 ## Examples of Convolutional Network Architectures
 * [VGGNet](http://www.robots.ox.ac.uk/~vgg/research/very_deep/)
@@ -41,6 +45,18 @@
 * [Jupyter Notebook](http://jupyter.org/) is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 * I'm using Jupyter notebooks to demonstrate and experiment with training machine learning models using keras/tensorflow. After the model is complete, I switch to running the flask server from the command line to communicate with a p5 sketch.
 
+## Numpy
+* [Numpy](http://www.numpy.org/) is a scientific computing package for Python. We will be making use of its "linear algebra" features for storing all inputs and outputs to the machine learning systems as "matrices".
+* [Numpy Quickstart tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+
 ## Keras / Tensorflow
 * [Tensorflow](https://www.tensorflow.org/) is an open-source library for machine learning. [github](https://github.com/tensorflow/)
 * [Keras](https://keras.io/) Keras is a higher-level machine learning API that runs on top of TensorFlow. Keras allows for easy and fast prototyping and supports both convolutional and recurrent networks.
+
+## Objects we are using in Keras
+* [Sequential](https://keras.io/models/sequential/): a linear stack of layers. This is the architecture of your model!
+* [Conv2D](https://keras.io/layers/convolutional/): a 2D convolutional layer
+* [Dense](https://keras.io/layers/core/): a "regular" fully-connected neural network layer
+* [Loss functions](https://keras.io/losses/): keras includes several options for loss functions. For categorical classification scenarios using softmax, you'll typically see a function called "categorical_crossentropy" used.
+* [Optimizers](https://keras.io/optimizers/): This refers to the "gradient descent" algorithm used. In my examples you'll see "RMSProp" (Root Mean Square Propogation) which is a method that adjusts the learning rate for each parameter according to the gradient magnitudes.
+* [Metrics](https://keras.io/metrics/): This refers to the function that evaluates the performance of your model.
