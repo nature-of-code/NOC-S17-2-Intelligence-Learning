@@ -15,7 +15,6 @@ var maxlen = 40;
 // Variable to stop the sketch from querying the server too often
 var waiting = false;
 
-
 function setup() {
   noCanvas();
 
@@ -28,7 +27,6 @@ function setup() {
   textInput.input(generate);
   lengthSlider.input(generate);
   tempSlider.input(generate);
-
 }
 
 function generate() {
