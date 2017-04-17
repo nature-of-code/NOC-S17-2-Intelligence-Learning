@@ -10,9 +10,9 @@ $ python server.py
 ```
 
 # What to do with this example:
-* Use a browser to go to localhost:8080 to run the sketch and test the text input and response.
-* Go to localhost:8080/test to see the JSON response from the server {"status": "no name"}
-* Go to localhost:8080/test?name=YOURNAME to see the response from the server {"status": "name", "name": "YOURNAME"}
+* Use a browser to go to `localhost:8080` to run the sketch and test the text input and response.
+* Go to `localhost:8080/test` to see the JSON response from the server {"status": "no name"}
+* Go to `localhost:8080/test?name=YOURNAME` to see the response from the server {"status": "name", "name": "YOURNAME"}
 
 
 (*Tested in Arch Linux where the default python version is 3.6)
