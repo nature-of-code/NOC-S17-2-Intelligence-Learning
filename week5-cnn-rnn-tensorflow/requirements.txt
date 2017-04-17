@@ -1,0 +1,8 @@
+Flask==0.12.1
+matplotlib==2.0.0
+numpy==1.10.4
+scipy==0.17.0
+Pillow==4.1.0
+keras==2.0.3
+image==1.5.5
+tensorflow==1.0.0
