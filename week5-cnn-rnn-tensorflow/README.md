@@ -49,15 +49,22 @@
 ## Numpy
 * [Numpy](http://www.numpy.org/) is a scientific computing package for Python. We will be making use of its "linear algebra" features for storing all inputs and outputs to the machine learning systems as "matrices".
 * [Numpy Quickstart tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+* Some numpy functions I am using
+  * `dot()`: [docs](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html)
+  * `reshape()`: [docs](https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html)
+  * `expand_dims()`: [docs](https://docs.scipy.org/doc/numpy/reference/generated/numpy.expand_dims.html)
 
 ## Keras / Tensorflow
 * [Tensorflow](https://www.tensorflow.org/) is an open-source library for machine learning. [github](https://github.com/tensorflow/)
 * [Keras](https://keras.io/) Keras is a higher-level machine learning API that runs on top of TensorFlow. Keras allows for easy and fast prototyping and supports both convolutional and recurrent networks.
 
-## Objects we are using in Keras
+## Things we are using in Keras
 * [Sequential](https://keras.io/models/sequential/): a linear stack of layers. This is the architecture of your model!
 * [Conv2D](https://keras.io/layers/convolutional/): a 2D convolutional layer
 * [Dense](https://keras.io/layers/core/): a "regular" fully-connected neural network layer
 * [Loss functions](https://keras.io/losses/): keras includes several options for loss functions. For categorical classification scenarios using softmax, you'll typically see a function called "categorical_crossentropy" used.
 * [Optimizers](https://keras.io/optimizers/): This refers to the "gradient descent" algorithm used. In my examples you'll see "RMSProp" (Root Mean Square Propogation) which is a method that adjusts the learning rate for each parameter according to the gradient magnitudes.
 * [Metrics](https://keras.io/metrics/): This refers to the function that evaluates the performance of your model.
+* [Saving and Loading a Keras Model](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model)
+
+## Some additional image stuff
