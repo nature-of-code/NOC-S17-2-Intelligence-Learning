@@ -1,4 +1,6 @@
-#!/usr/bin/python
+# Daniel Shiffman
+# Nature of Code: Intelligence and Learning
+# https://github.com/shiffman/NOC-S17-2-Intelligence-Learning
 
 # import everything we need
 from flask import Flask, jsonify, request
