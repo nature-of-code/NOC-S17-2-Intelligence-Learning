@@ -28,6 +28,7 @@ This short list thanks to Andrey Kurenkov's excellent ['Brief' History of Neural
 
 ## Online Reading
 * [Neural Networks (Nature of Code Chapter 10)](http://natureofcode.com/book/chapter-10-neural-networks/)
+* [A Quick Introduction to Neural Networks](https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/) by Ujjwal Karn
 * [Let’s code a Neural Network from scratch](https://medium.com/typeme/lets-code-a-neural-network-from-scratch-part-1-24f0a30d7d62) by Charles Fried
 * [Rolf van Gelder's Neural Network in Processing](http://cagewebdev.com/wp-content/uploads/2017/01/Neural-Networks-for-Dummies.pdf)
 * [Linear Algebra Cheatsheet](https://medium.com/towards-data-science/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c) by Brendan Fortuner
