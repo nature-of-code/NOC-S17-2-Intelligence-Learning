@@ -36,7 +36,7 @@ maxlen = 40
 # We have to build the same dictionaries here from the source text
 # We could instead save and load these instead?
 # read the file and convert to lowercase (must match how we did it during training)
-text = open('data/hamlet.txt').read().lower()
+text = open('hamlet.txt').read().lower()
 # Get a list of all the unique characters
 chars = sorted(list(set(text)))
 # Two dictionaries
@@ -44,7 +44,6 @@ chars = sorted(list(set(text)))
 # Lookup an index by character
 char_indices = dict((c,i) for i, c in enumerate(chars))
 indices_char = dict((i,c) for i,c in enumerate(chars))
-
 
 # Routes
 # This is root path, use index.html in "static" folder
@@ -81,7 +80,7 @@ def upload():
         # Then get a probability map of possible predictions of the next char
         preds = model.predict(x, verbose=0)[0]
         # Pick one
-        next_index = sample(preds, diversity)
+        next_index = sample(preds, temperature)
         # What character is it?
         next_char = indices_char[next_index]
         # Add it

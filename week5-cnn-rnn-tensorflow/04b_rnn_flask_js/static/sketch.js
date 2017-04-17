@@ -64,6 +64,7 @@ function generate() {
     // Now we are waiting
     waiting = true;
     console.log('Posting seed: ' + txt);
+    console.log(data);
     // Post to the server
     httpPost('/upload', data, success, error);
   }
@@ -71,6 +72,7 @@ function generate() {
   // WE got a reply
   function success(reply) {
     var result = JSON.parse(reply);
+    console.log(result);
     // Update the DOM elements
     select('#original').html(original);
     select('#prediction').html(result.sentence);
