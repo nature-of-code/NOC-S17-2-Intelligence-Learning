@@ -25,3 +25,10 @@
 * [VGGNet](http://www.robots.ox.ac.uk/~vgg/research/very_deep/)
 * [ResNets](https://arxiv.org/abs/1512.03385)
 * [DenseNet](https://arxiv.org/abs/1608.06993), [Github](https://github.com/liuzhuang13/DenseNet)
+
+## Python
+* Follow Abhiskeh's [Environment Setup](https://github.com/shekit/machine-learning-demystified/blob/master/README.md) instructions using [Miniconda](https://conda.io/miniconda.html), [Python 3](https://www.python.org/), and [tensorflow](https://www.tensorflow.org/).
+* [Python Tutorial / Cheatsheet](https://www.stavros.io/tutorials/python/) by Stavros Korokithakis.
+
+## Flask
+* [Flask: a python "microframework" for web applications](http://flask.pocoo.org/)
