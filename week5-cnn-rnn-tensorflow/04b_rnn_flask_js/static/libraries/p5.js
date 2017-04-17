@@ -20716,7 +20716,6 @@ p5.prototype.httpPost = function () {
  *                                    in as first argument
  */
 p5.prototype.httpDo = function () {
-  console.log(arguments);
   if (typeof arguments[0] === 'object') {
     reqwest(arguments[0]);
   } else {
