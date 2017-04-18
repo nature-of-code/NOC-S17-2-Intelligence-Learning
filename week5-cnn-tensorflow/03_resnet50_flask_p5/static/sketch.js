@@ -13,6 +13,8 @@ function setup() {
 
   // Add an event for when a file is dropped onto the canvas
   c.drop(gotFile);
+  // Add the same event for when a file is added to the File Input
+  var fileInput = createFileInput(gotFile);
 }
 
 function classify(img) {
