@@ -68,10 +68,11 @@ Week 4 - Neural Networks (April 11/12)
 * Training vs. Testing (MNIST data set)
 * What is "Deep Learning"?
 
-Week 5 - Convolution Networks, Recurrent Networks (April 18/19)
+Week 5 - Adding Tensorflow: Convolutional Neural Networks (April 18/19)
 -----------------------------
 * [Environment Setup](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Python-Environment-Setup)
-* [Week 5 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week5-cnn-rnn-tensorflow/README.md)
+* [Week 5 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week5-cnn-tensorflow/README.md)
+* [Assignment: Project Step 1](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Project-Step-1)
 * Overview of libraries and frameworks for Deep Learning
 * Convolutional Neural Networks for Image Classification (and more)
 * Recurrent Neural Networks for Sequences (text generation)
@@ -79,9 +80,9 @@ Week 5 - Convolution Networks, Recurrent Networks (April 18/19)
 * Python and Flask
 * Flask and p5.js
 
-Week 6 - Reinforcement Learning (April 25/26)
+Week 6 - Recurrent Neural Networks, Reinforcement Learning (April 25/26)
 --------------------------
-* Steering agents
+* [Week 6 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week6-runn-tensorflow/README.md)
 
 Week 7 - Project Presentations (May 2/3)
 ------------------------------
