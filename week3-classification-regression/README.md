@@ -53,3 +53,4 @@
 * [Linear Regression with Gradient Descent video tutorial from Siraj](https://www.youtube.com/watch?v=XdM6ER7zTLk)
 * [Week 1 of Andrew Ng's Machine Learning Coursera course](https://www.coursera.org/learn/machine-learning/home/week/1)
 * [Tom Alexander's JS Regression Library](https://github.com/Tom-Alexander/regression-js)
+* A video [tutorial](https://www.youtube.com/watch?v=HJRWhgyjoNo&t=608s) of the math and implementation by Jyo Pari
