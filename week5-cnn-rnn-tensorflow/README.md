@@ -73,7 +73,7 @@
 * [Keras](https://keras.io/) Keras is a higher-level machine learning API that runs on top of TensorFlow. Keras allows for easy and fast prototyping and supports both convolutional and recurrent networks.
 
 ### Things we are using in Keras
-* [Sequential](https://keras.io/models/sequential/): a linear stack of layers. This is the architecture of your model!
+* [Sequential](https://keras.io/models/sequential/): a linear stack of layers. This is the architecture of your model! Look at Jyo Pari's [tutorial](https://www.youtube.com/watch?v=__MVW-TCYjk) using the Sequential model to train the XOR rule!
 * [Conv2D](https://keras.io/layers/convolutional/): a 2D convolutional layer
 * [LSTM](https://keras.io/layers/recurrent/): A "Recurrent Layer" (also GRU, SimpleRNN)
 * [Dense](https://keras.io/layers/core/): a "regular" fully-connected neural network layer
