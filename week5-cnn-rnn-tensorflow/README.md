@@ -2,6 +2,7 @@
 
 ## Examples
 * [p5 and flask](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/01_simple_flask_p5)
+* [Visualizing CNN Steps with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/00_p5_convolution/) (in progress)
 * [CNN1: training and testing digits](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/02a_cnn_keras)
 * [CNN2: classifying digit drawn with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/02b_cnn_flask_p5)
 * [CNN3: classifying images from p5 using pre-trained RESNET-50 model](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/03_resnet50_flask_p5)
@@ -82,5 +83,5 @@
 * [Saving and Loading a Keras Model](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model)
 
 ### Some additional image stuff
-* [base64 encoding and decoding](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) using [toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
+* [base64 encoding and decoding](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) with [toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
 * [PIL](https://pypi.python.org/pypi/PIL) (Python Imaging Library)
