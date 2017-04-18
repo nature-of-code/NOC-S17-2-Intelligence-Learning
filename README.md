@@ -70,6 +70,7 @@ Week 4 - Neural Networks (April 11/12)
 
 Week 5 - Convolution Networks, Recurrent Networks (April 18/19)
 -----------------------------
+* [Environment Setup](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Python-Environment-Setup)
 * [Week 5 Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week5-cnn-rnn-tensorflow/README.md)
 * Overview of libraries and frameworks for Deep Learning
 * Convolutional Neural Networks for Image Classification (and more)
