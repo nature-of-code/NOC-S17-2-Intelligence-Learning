@@ -1,13 +1,11 @@
 # Deep Learning and Keras with p5
 
 ## Examples
-* [p5 and flask](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/01_simple_flask_p5)
-* [Visualizing CNN Steps with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/00_p5_convolution/) (in progress)
-* [CNN1: training and testing digits](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/02a_cnn_keras)
-* [CNN2: classifying digit drawn with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/02b_cnn_flask_p5)
-* [CNN3: classifying images from p5 using pre-trained RESNET-50 model](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/03_resnet50_flask_p5)
-* [RNN1: training and testing LSTM for text generation](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/04a_rnn_keras)
-* [RNN2: Generating RNN text suggestions with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/04b_rnn_flask_js)
+* [p5 and flask](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow/01_simple_flask_p5)
+* [Visualizing CNN Steps with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow/00_p5_convolution/) (in progress)
+* [CNN1: training and testing digits](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow/02a_cnn_keras)
+* [CNN2: classifying digit drawn with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow/02b_cnn_flask_p5)
+* [CNN3: classifying images from p5 using pre-trained RESNET-50 model](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow/03_resnet50_flask_p5)
 
 ## Convolutional Neural Networks
 * [An Intuitive Explanation of Convolutional Neural Networks](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) by Ujjwal Karn
@@ -41,10 +39,6 @@
 * [VGGNet](http://www.robots.ox.ac.uk/~vgg/research/very_deep/)
 * [ResNets](https://arxiv.org/abs/1512.03385)
 * [DenseNet](https://arxiv.org/abs/1608.06993), [Github](https://github.com/liuzhuang13/DenseNet)
-
-## Recurrent Neural Networks
-* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy
-* More to come. . .
 
 ## Tools, frameworks, libraries for this week
 
