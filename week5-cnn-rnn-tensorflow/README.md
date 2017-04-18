@@ -31,6 +31,9 @@
 * [ResNets](https://arxiv.org/abs/1512.03385)
 * [DenseNet](https://arxiv.org/abs/1608.06993), [Github](https://github.com/liuzhuang13/DenseNet)
 
+## Recurrent Neural Networks
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy
+
 # Tools, frameworks, libraries for this week
 
 ## Python
@@ -69,3 +72,5 @@
 * [Saving and Loading a Keras Model](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model)
 
 ## Some additional image stuff
+* [base64 encoding and decoding](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) using [toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
+* [PIL](https://pypi.python.org/pypi/PIL) (Python Imaging Library)
