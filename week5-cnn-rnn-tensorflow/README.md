@@ -1,5 +1,13 @@
 # Deep Learning and Keras with p5
 
+## Examples
+* [p5 and flask](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/01_simple_flask_p5)
+* [CNN1: training and testing digits](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/02a_cnn_keras)
+* [CNN2: classifying digit drawn with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/02b_cnn_flask_p5)
+* [CNN3: classifying images from p5 using pre-trained RESNET-50 model](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/03_resnet50_flask_p5)
+* [RNN1: training and testing LSTM for text generation](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/04a_rnn_keras)
+* [RNN2: Generating RNN text suggestions with p5](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-rnn-tensorflow/04b_rnn_flask_js)
+
 ## Convolutional Neural Networks
 * [An Intuitive Explanation of Convolutional Neural Networks](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) by Ujjwal Karn
 * [Original 1998 "LetNet5" paper: "Gradient-Based Learning Applied to Document Recognition"](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by Y. Lecun, L. Bottou, Y. Bengio, P. Haffner
