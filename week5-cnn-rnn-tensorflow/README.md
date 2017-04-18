@@ -14,6 +14,7 @@
 * [Original 1998 "LetNet5" paper: "Gradient-Based Learning Applied to Document Recognition"](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by Y. Lecun, L. Bottou, Y. Bengio, P. Haffner
 * [Online 3D Visualization of a Convolutional Network trained on MNIST](http://scs.ryerson.ca/~aharley/vis/conv/flat.html) by Adam Harley.
 * [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU&feature=youtu.be), video tutorial by Luis Serrano
+* [Siraj's CNN video](https://www.youtube.com/watch?v=cAICT4Al5Ow&feature=youtu.be), [code on github](https://github.com/llSourcell/how_to_make_an_image_classifier)
 
 ### Steps
 1. Convolution, see: [Convolution Matrix](https://docs.gimp.org/en/plug-in-convmatrix.html) from GIMP documentation.
