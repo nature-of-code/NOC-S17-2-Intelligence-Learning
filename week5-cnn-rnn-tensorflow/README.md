@@ -14,7 +14,6 @@
 * [Online 3D Visualization of a Convolutional Network trained on MNIST](http://scs.ryerson.ca/~aharley/vis/conv/flat.html) by Adam Harley.
 * [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU&feature=youtu.be), video tutorial by Luis Serrano
 
-<<<<<<< HEAD
 ### Steps
 1. Convolution, see: [Convolution Matrix](https://docs.gimp.org/en/plug-in-convmatrix.html) from GIMP documentation.
 2. ReLU (aka "Rectified Linear Unit"): A non-linear activation function that turns all negative values into zero.
