@@ -82,7 +82,7 @@ function draw() {
       dest.pixels[index + 0] = result[0];
       dest.pixels[index + 1] = result[1];
       dest.pixels[index + 2] = result[2];
-      dest.pixels[loc + 3] = 255;
+      dest.pixels[index + 3] = 255;
     }
   }
   dest.updatePixels();
@@ -122,14 +122,14 @@ function convolution(img, x, y, kernel, kernelsize) {
 
       // Make sure we haven't walked off the edge of the pixel array
       // It is often good when looking at neighboring pixels to make sure we have not gone off the edge of the pixel array by accident.
-      index = constrain(loc, 0, img.pixels.length - 1);
+      index = constrain(index, 0, img.pixels.length - 1);
 
       // Calculate the convolution
       // We sum all the neighboring pixels
       // multiplied by the weights in the convolution kernel.
-      rsum += img.pixels[loc + 0] * kernel[i][j];
-      gsum += img.pixels[loc + 1] * kernel[i][j];
-      bsum += img.pixels[loc + 2] * kernel[i][j];
+      rsum += img.pixels[index + 0] * kernel[i][j];
+      gsum += img.pixels[index + 1] * kernel[i][j];
+      bsum += img.pixels[index + 2] * kernel[i][j];
     }
   }
 
