@@ -20,7 +20,7 @@
   4. Classification (Fully-Connected Network)
 
 ## Terminology
-  * [filter (aka kernel)](https://en.wikipedia.org/wiki/Kernel_(image_processing)
+  * [filter (aka kernel)](https://en.wikipedia.org/wiki/Kernel_(image_processing))
   * feature map
   * equivarient: refers to the scale independent nature of the features, allowing objects to be detected in the image at any size / location.
   * [softmax](http://cs231n.github.io/linear-classify/#softmax): an activation function for the final output layer that squashes all values to between 0 and 1 (and adding up to 1). This is perfect for probabilistic outputs like image classifcation.
