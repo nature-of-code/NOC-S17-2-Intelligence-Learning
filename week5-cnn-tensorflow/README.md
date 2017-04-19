@@ -43,7 +43,7 @@
 ## Tools, frameworks, libraries for this week
 
 ### Python
-* Follow these Environment Setup](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Python-Environment-Setup) instructions using [Miniconda](https://conda.io/miniconda.html), [Python 3](https://www.python.org/), and [tensorflow](https://www.tensorflow.org/).
+* [Follow these Environment Setup](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Python-Environment-Setup) instructions using [Miniconda](https://conda.io/miniconda.html), [Python 3](https://www.python.org/), and [tensorflow](https://www.tensorflow.org/).
 * [Python Tutorial / Cheatsheet](https://www.stavros.io/tutorials/python/) by Stavros Korokithakis.
 
 ### Flask
