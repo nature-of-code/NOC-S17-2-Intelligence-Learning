@@ -37,11 +37,11 @@
 * In the case of regression, a new data point is assigned a value according the average of the values of its K nearest neighbors.
 * It can be advantageous to normalize all data (between say a range of 0 and 1) so that a particular feature with a large range doesn't skew the distance calculations.
 * It can also be advantageous to assign a weight to the classification or value of each neighbor according to its distance.
+* [Chapters 1,2,8 of Collective Intelligence](https://getit.library.nyu.edu/go/9421232) (available via NYU Library)
 * [Rebecca Fiebrink's Machine Learning for Musicians and Artists Session 1](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists-v/sessions/classification-part-i)
 * [KNN Python from scratch Tutorial](http://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/)
 * [KNN Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
 * [KNN in Python with scikit Learn](http://scikit-learn.org/stable/modules/neighbors.html)
-* [Chapter 8 of Programming Collective Intelligence](http://amzn.to/2nR6TFu)
 
 ## Linear Regression with Gradient Descent
 * Linear Regression, a machine learning technique borrowed from statistics, refers to the process of fitting a linear equation (`y = mx + b`) to a set of training data (`x` being the input, `y` the output). Predictions can be made for new input data by feeding `x` into the equation and solving for `y`.
