@@ -1,4 +1,4 @@
-# Deep Learning and Keras with p5
+# Convolutional Neural Networks with Keras plus p5
 
 ## Examples
 * [p5 and flask](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow/01_simple_flask_p5)
@@ -70,7 +70,6 @@
 ### Things we are using in Keras
 * [Sequential](https://keras.io/models/sequential/): a linear stack of layers. This is the architecture of your model! Look at Jyo Pari's [tutorial](https://www.youtube.com/watch?v=__MVW-TCYjk) using the Sequential model to train the XOR rule!
 * [Conv2D](https://keras.io/layers/convolutional/): a 2D convolutional layer
-* [LSTM](https://keras.io/layers/recurrent/): A "Recurrent Layer" (also GRU, SimpleRNN)
 * [Dense](https://keras.io/layers/core/): a "regular" fully-connected neural network layer
 * [Loss functions](https://keras.io/losses/): keras includes several options for loss functions. For categorical classification scenarios using softmax, you'll typically see a function called "categorical_crossentropy" used.
 * [Optimizers](https://keras.io/optimizers/): This refers to the "gradient descent" algorithm used. In my examples you'll see "RMSProp" (Root Mean Square Propogation) which is a method that adjusts the learning rate for each parameter according to the gradient magnitudes.
