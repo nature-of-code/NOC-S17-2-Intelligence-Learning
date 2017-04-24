@@ -14,14 +14,21 @@
 * [Recurrent Neural Networks in Tensorflow](https://www.tensorflow.org/versions/r0.10/tutorials/recurrent/)
 * [Siraj's RNN video](https://www.youtube.com/watch?v=cdLUzrjnlr4), [code on github](https://github.com/llSourcell/recurrent_neural_net_demo/blob/master/rnn.py)
 
-## Other projects and resources
+### Other projects and resources
 * [Writing with the Machine](https://www.robinsloan.com/notes/writing-with-the-machine/)
 * [Magenta: Make Music and Art Using Machine Learning](https://magenta.tensorflow.org/)
 * [Handwriting Generation with RNN and p5.js](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/)
 * [Experiments in handwriting](http://distill.pub/2016/handwriting/)
 * [RNN for generating Baroque Music](https://www.youtube.com/watch?v=SacogDL_4JU)
 
-### Steps
+### Related open source frameworks:
+* [char-rnn](https://github.com/karpathy/char-rnn)
+* [torch-rnn](https://github.com/jcjohnson/torch-rnn)
+* [Recurrent-JS](https://github.com/karpathy/recurrentjs) and [Recurrent-Node-JS](https://github.com/shiffman/Recurrent-Node-JS)
+* [NeuralTalk2](https://github.com/karpathy/neuraltalk2)
+* [Show and Tell: A Neural Image Caption Generator](https://github.com/tensorflow/models/tree/master/im2txt) with Tensorflow
+* [DenseCap: Fully Convolutional Localization Networks for Dense Captioning](http://cs.stanford.edu/people/karpathy/densecap/)
+
 
 ### Terminology
 * one-hot encoding: [What is one hot encoding and when is it used in data science?](https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science)
@@ -30,7 +37,7 @@
 * `maxlen` - length of a "sentence" for inputting into RNN.
 * temperature (aka "diversity"): A number in the range of 0-1 (cannot be 0). The temperature is divides probabilities before applying softmax. Lower temperature will result in more "expected" outcomes (high probabilities are even higher). A higher temperature increases the "diversity" of outcomes, but may produce less "correct-sounding" results.
 
-## Tools, frameworks, libraries for this week
+## Tools, frameworks, libraries for this week's examples
 
 The tools (Python, Flask, p5.js, Keras/Tensorflow) are [the same as last week](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week5-cnn-tensorflow#tools-frameworks-libraries-for-this-week). Below are some additional elements related to RNN.
 
