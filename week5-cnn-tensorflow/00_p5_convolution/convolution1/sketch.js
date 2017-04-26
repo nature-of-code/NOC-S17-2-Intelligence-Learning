@@ -133,20 +133,15 @@ function convolution(img, x, y, kernel, kernelsize) {
     }
   }
 
-  // To emphasize ReLU I'm mapping negative pixels to a positive range
-  rsum = map(rsum, -255, 255, 0, 255);
-  gsum = map(gsum, -255, 255, 0, 255);
-  bsum = map(bsum, -255, 255, 0, 255);
-
-  // And then, capping the range and mapping it back to demonstrate ReLU
-  // Better way to do this?
+  // An artificial demonstration of ReLU
   if (relu.checked()) {
-    rsum = constrain(rsum, 127, 255);
-    gsum = constrain(gsum, 127, 255);
-    bsum = constrain(bsum, 127, 255);
-    rsum = map(rsum, 127, 255, 0, 255);
-    gsum = map(gsum, 127, 255, 0, 255);
-    bsum = map(bsum, 127, 255, 0, 255);
+    // Negative pixel values would be capped as in the pseudo-code below:
+    // sum = constrain(sum, 0, 255);
+  } else {
+    // To contrast with the effects of ReLU, here, we will map negative pixel values into the positive range.
+    rsum = map(rsum, -255, 255, 0, 255);
+    gsum = map(gsum, -255, 255, 0, 255);
+    bsum = map(bsum, -255, 255, 0, 255);
   }
 
   // Return an array with the three color values
