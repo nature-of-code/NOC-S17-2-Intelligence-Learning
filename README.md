@@ -82,7 +82,7 @@ Week 5 - Adding Tensorflow: Convolutional Neural Networks (April 18/19)
 Week 6 - Recurrent Neural Networks, NeuroEvolution/Reinforcement Learning (April 25/26)
 --------------------------
 * [Week 6 RNN Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week6-rnn-tensorflow/README.md)
-* [Week 6 Bonus NeuroEvolution Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/blob/master/week6bonus-neuroevolution/README.md)
+* [Week 6 Bonus NeuroEvolution Notes](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week6bonus-reinforcement-neuroevolution/README.md)
 * Recurrent Neural Networks for Sequences (text generation)
 * Overview of Reinforcement Learning
 * Neuro Evolution (evolving ANN weights)
