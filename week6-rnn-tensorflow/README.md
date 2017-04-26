@@ -38,7 +38,7 @@
 
 ### Examples of data that do not fit ANNs/CNNs
 * Text (sequence of characters, words)
-* Music (sequences of notes, rythm)
+* Music (sequences of notes, rhythm)
 * Drawings (sequences of "vector" paths)
 
 ### Terminology

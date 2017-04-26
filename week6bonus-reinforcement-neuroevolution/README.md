@@ -18,3 +18,19 @@ Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
 * [Evolution 101: Neuroevolution](https://www3.beacon-center.org/blog/2012/08/13/evolution-101-neuroevolution/) by Danielle Whittaker
 * [NeuroEvolution](https://en.wikipedia.org/wiki/Neuroevolution) on Wikipedia
 * [Neuroevolution of augmenting topologies aka NEAT](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies) on Wikipedia
+
+# Reinforcement Learning
+
+## References
+* [Demystifying Deep Reinforcement Learning](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/) by Tambet Matiisen
+* [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) (original DeepMind paper, [video](https://www.youtube.com/watch?v=V1eYniJ0Rnk))
+
+## Tools and Frameworks
+* [OpenAI gym](https://gym.openai.com/)
+* [REINFORCEjs](http://cs.stanford.edu/people/karpathy/reinforcejs/index.html)
+
+
+## Examples / Tutorials
+* [Reinforcement Q-Learning Tutorial](https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/16_Reinforcement_Learning.ipynb)
+* Siraj's [How to Beat Pong Using Policy Gradients](https://www.youtube.com/watch?v=PDbXPBwOavc) video. [code](https://github.com/llSourcell/Policy_Gradients_to_beat_Pong) (Using OpenAI Universe)
+* Udacity's [Q Learning example](https://github.com/udacity/deep-learning/blob/master/reinforcement/Q-learning-cart.ipynb) (uses OpenAI gym)
