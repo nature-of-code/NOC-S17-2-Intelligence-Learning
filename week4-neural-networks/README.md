@@ -11,7 +11,6 @@
 * [Another Processing Example](https://github.com/ANyanCatFan/SimpleNN)
 
 ## Python examples
-* [Simple Flash Server + p5]()
 * [Make Your Own Neural Network ](https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork/) from Tariq Rashid
 * [Abishek's Tensorflow Example](https://github.com/shekit/machine-learning-demystified/blob/master/week2/NeuralNet.ipynb)
 * [How to freeze a model and serve it with a python API](https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc)

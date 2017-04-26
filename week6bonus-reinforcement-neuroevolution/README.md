@@ -1,9 +1,8 @@
 # Neuro-Evolution
 
 ## Examples (in progress)
-* [Flappy Bird NeuroEvolution](https://github.com/shiffman/nn-evolution-p5/tree/master/flappy)
-* [Steering NeuroEvolution](https://github.com/shiffman/nn-evolution-p5/tree/master/steering)
-* [Run Demos](https://shiffman.github.io/nn-evolution-p5/)
+* [NeuroEvolution and Flappy Bird](https://shiffman.github.io/Neural-Network-p5/examples/neuro-evolution/flappy/), [source](https://github.com/shiffman/Neural-Network-p5/tree/master/examples/neuro-evolution/flappy)
+* [NeuroEvolution and Steering](https://shiffman.github.io/Neural-Network-p5/examples/neuro-evolution/steering/), [source](https://github.com/shiffman/Neural-Network-p5/tree/master/examples/neuro-evolution/steering)
 
 ## Other NeuroEvolution examples
 * [Flappy Learning](https://github.com/xviniette/FlappyLearning) by @xviniette
