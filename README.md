@@ -86,6 +86,7 @@ Week 6 - Recurrent Neural Networks, NeuroEvolution/Reinforcement Learning (April
 * Recurrent Neural Networks for Sequences (text generation)
 * Overview of Reinforcement Learning
 * Neuro Evolution (evolving ANN weights)
+
 Week 7 - Project Presentations (May 2/3)
 ------------------------------
 * [Project Presentations + Documentation](https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/wiki/Project)
