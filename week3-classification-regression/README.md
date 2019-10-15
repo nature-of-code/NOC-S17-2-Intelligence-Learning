@@ -50,7 +50,6 @@
 * While most regression problems can be solved using statistics, for example with a method known as "ordinary least squares", in the case or large data sets with many input variables, the equation cannot easily be estimated in one fell swoop. This is where the machine learning technique known as "gradient descent" comes in. Gradient descent is an algorithmic process which adjusts the parameters of a model according to errors to minimize errors. Performed iteratively overtime, a linear or polynomial regression equation can be estimated. This technique will serve as a fundamental piece of building a neural network simulation and so while it is unnecessary in the simple linear regression examples for this week, it's the perfect place to learn and practice the algorithm.
 * [Rebecca Fiebrink's Machine Learning for Musicians and Artists Session 2](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists-v/sessions/regression)
 * [Chapter 3 of An Introduction to Statistical Learning (ISL)](http://www-bcf.usc.edu/~gareth/ISL/)
-* [Linear Regression with Gradient Descent video tutorial from Siraj](https://www.youtube.com/watch?v=XdM6ER7zTLk)
 * [Week 1 of Andrew Ng's Machine Learning Coursera course](https://www.coursera.org/learn/machine-learning/home/week/1)
 * [Tom Alexander's JS Regression Library](https://github.com/Tom-Alexander/regression-js)
 * A video [tutorial](https://www.youtube.com/watch?v=HJRWhgyjoNo&t=608s) of the math and implementation by Jyo Pari
