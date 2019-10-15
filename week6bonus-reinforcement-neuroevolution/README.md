@@ -32,5 +32,4 @@ Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
 
 ## Examples / Tutorials
 * [Reinforcement Q-Learning Tutorial](https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/16_Reinforcement_Learning.ipynb)
-* Siraj's [How to Beat Pong Using Policy Gradients](https://www.youtube.com/watch?v=PDbXPBwOavc) video. [code](https://github.com/llSourcell/Policy_Gradients_to_beat_Pong) (Using OpenAI Universe)
 * Udacity's [Q Learning example](https://github.com/udacity/deep-learning/blob/master/reinforcement/Q-learning-cart.ipynb) (uses OpenAI gym)

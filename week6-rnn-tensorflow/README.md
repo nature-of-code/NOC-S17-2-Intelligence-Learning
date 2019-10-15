@@ -14,7 +14,6 @@
 * [Tomas Mikolov's Thesis](http://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf)
 * [LSTM Networks for Sentiment Analysis](http://deeplearning.net/tutorial/lstm.html)
 * [Recurrent Neural Networks in Tensorflow](https://www.tensorflow.org/versions/r0.10/tutorials/recurrent/)
-* [Siraj's RNN video](https://www.youtube.com/watch?v=cdLUzrjnlr4), [code on github](https://github.com/llSourcell/recurrent_neural_net_demo/blob/master/rnn.py)
 
 ### Other projects and resources
 * [Writing with the Machine](https://www.robinsloan.com/notes/writing-with-the-machine/)
